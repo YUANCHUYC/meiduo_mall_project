@@ -10,10 +10,15 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
-import os
+import os, sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# 把apps文件夹路径, 加入导包路径
+sys.path.insert(
+    0,
+    os.path.join(BASE_DIR, 'apps')
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -35,13 +40,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users',  # 注册用户应用
+    'corsheaders',  # 加载应用解决跨域问题
+    'verifications',  # 验证码模块
 ]
 
 MIDDLEWARE = [
+    # 跨域中间件，作用：响应OPTIONS请求
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -135,6 +145,14 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
+    # 验证码信息: 存到 2 号库
+    "verify_code": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://192.168.209.128:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
@@ -179,3 +197,18 @@ LOGGING = {
         },
     }
 }
+
+ALLOWED_HOSTS = ['www.meiduo.site']
+# 或者设置 通配域名
+# ALLOWED_HOSTS = ['*']
+
+# 指定django使用的自定义的用户模型类
+# 注意，参数不是导包路径。是一种固定的格式："应用名.自定义用户模型类"
+AUTH_USER_MODEL = 'users.User'
+
+# CORS跨域请求白名单设置
+CORS_ORIGIN_WHITELIST = [
+    'http://www.meiduo.site:8080'
+]
+# 允许携带cookie
+CORS_ALLOW_CREDENTIALS = True

@@ -1,0 +1,217 @@
+INFO 2021-01-15 07:33:47,431 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 07:38:58,248 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 07:46:53,208 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 07:48:11,166 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-15 07:48:13,760 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-15 07:48:39,294 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 07:48:39,298 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 1989
+WARNING 2021-01-15 07:49:32,469 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 07:49:32,473 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 1989
+WARNING 2021-01-15 07:49:59,128 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 07:49:59,132 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 1989
+WARNING 2021-01-15 07:51:41,961 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 07:51:41,964 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 1989
+INFO 2021-01-15 08:20:10,100 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-15 08:20:27,860 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 08:20:27,861 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2194
+WARNING 2021-01-15 08:20:30,250 log 222 Not Found: /image_codes/22fd3d8b-1fb7-41c0-a3f9-ce9f395d0ae5/
+WARNING 2021-01-15 08:20:30,251 basehttp 154 "GET /image_codes/22fd3d8b-1fb7-41c0-a3f9-ce9f395d0ae5/ HTTP/1.1" 404 2302
+INFO 2021-01-15 08:20:55,862 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:21:25,824 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:22:13,594 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:22:26,878 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:22:30,120 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:23:21,617 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-15 08:23:24,123 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:23:37,410 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-15 08:23:39,616 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:23:45,191 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:23:48,290 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+WARNING 2021-01-15 08:23:51,737 log 222 Not Found: /image_codes/c8fa6565-31f5-44db-8077-bbdb6c36d6c5/
+WARNING 2021-01-15 08:23:51,738 basehttp 154 "GET /image_codes/c8fa6565-31f5-44db-8077-bbdb6c36d6c5/ HTTP/1.1" 404 2302
+INFO 2021-01-15 08:24:03,992 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:24:32,067 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-15 08:24:35,892 log 222 Not Found: /image_codes/edb07024-7b5e-4108-9007-3574b559c38f/
+WARNING 2021-01-15 08:24:35,893 basehttp 154 "GET /image_codes/edb07024-7b5e-4108-9007-3574b559c38f/ HTTP/1.1" 404 2302
+INFO 2021-01-15 08:24:41,102 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:26:39,924 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-01-15 08:26:42,326 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:28:17,891 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 08:28:20,596 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:29:01,175 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-15 08:29:07,095 log 222 Not Found: /image_codes/5da3127f-f98f-4f1f-8e84-da9b9bde3dfd/
+WARNING 2021-01-15 08:29:07,096 basehttp 154 "GET /image_codes/5da3127f-f98f-4f1f-8e84-da9b9bde3dfd/ HTTP/1.1" 404 2485
+INFO 2021-01-15 08:29:08,815 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:29:11,339 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:29:15,574 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:30:07,626 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 08:30:10,722 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:35:56,721 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-01-15 08:36:03,698 log 222 Internal Server Error: /image_codes/d8a40786-b56d-4521-800d-ad1bacff67dc/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    conn = get_redis_connection('verify_code')
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/cache/__init__.py", line 75, in __getitem__
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2021-01-15 08:36:03,708 basehttp 154 "GET /image_codes/d8a40786-b56d-4521-800d-ad1bacff67dc/ HTTP/1.1" 500 89538
+ERROR 2021-01-15 08:36:05,846 log 222 Internal Server Error: /image_codes/e0cf79ec-818e-49e4-ae02-5c39d71ff263/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    conn = get_redis_connection('verify_code')
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/cache/__init__.py", line 75, in __getitem__
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2021-01-15 08:36:05,847 basehttp 154 "GET /image_codes/e0cf79ec-818e-49e4-ae02-5c39d71ff263/ HTTP/1.1" 500 89552
+ERROR 2021-01-15 08:36:06,725 log 222 Internal Server Error: /image_codes/00a30805-c8a5-43da-b62f-72c54c3c1506/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    conn = get_redis_connection('verify_code')
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/cache/__init__.py", line 75, in __getitem__
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2021-01-15 08:36:06,727 basehttp 154 "GET /image_codes/00a30805-c8a5-43da-b62f-72c54c3c1506/ HTTP/1.1" 500 89536
+ERROR 2021-01-15 08:36:07,242 log 222 Internal Server Error: /image_codes/35f9c875-c903-4639-8674-42035b1f0ef6/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    conn = get_redis_connection('verify_code')
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/cache/__init__.py", line 75, in __getitem__
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2021-01-15 08:36:07,249 basehttp 154 "GET /image_codes/35f9c875-c903-4639-8674-42035b1f0ef6/ HTTP/1.1" 500 89544
+ERROR 2021-01-15 08:36:07,355 log 222 Internal Server Error: /image_codes/cf8c4605-b3d7-41e6-abed-b67d9722e3b4/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    conn = get_redis_connection('verify_code')
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/cache/__init__.py", line 75, in __getitem__
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2021-01-15 08:36:07,356 basehttp 154 "GET /image_codes/cf8c4605-b3d7-41e6-abed-b67d9722e3b4/ HTTP/1.1" 500 89534
+INFO 2021-01-15 08:39:29,194 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:39:48,695 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:39:55,396 basehttp 154 "GET /image_codes/aceef2f0-7cea-4b04-903c-3c63fec5a31c/ HTTP/1.1" 200 3261
+INFO 2021-01-15 08:39:56,783 basehttp 154 "GET /image_codes/9db3c94f-61f6-461a-9cd8-47917a753f0a/ HTTP/1.1" 200 3002
+INFO 2021-01-15 08:39:57,174 basehttp 154 "GET /image_codes/a369f2e0-a6c8-4240-bc64-53859b8375a7/ HTTP/1.1" 200 3528
+INFO 2021-01-15 08:39:57,317 basehttp 154 "GET /image_codes/2dbf57ec-ab9e-437f-ba0e-d461807438ca/ HTTP/1.1" 200 3601
+INFO 2021-01-15 08:39:57,462 basehttp 154 "GET /image_codes/a108b59c-26d5-4a74-bdb4-1bc8d7139012/ HTTP/1.1" 200 3332
+INFO 2021-01-15 08:39:57,610 basehttp 154 "GET /image_codes/6115c54b-5961-48f9-ad84-1438166f4c35/ HTTP/1.1" 200 2852
+INFO 2021-01-15 08:39:57,728 basehttp 154 "GET /image_codes/ce8fda41-5be5-4e40-9d6d-e181071ac219/ HTTP/1.1" 200 3566
+INFO 2021-01-15 08:43:46,924 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:43:50,415 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:43:55,105 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:43:57,774 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:44:07,029 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:44:09,380 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:44:16,617 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:44:20,171 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:44:48,081 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:44:50,701 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:44:59,504 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/urls.py changed, reloading.
+INFO 2021-01-15 08:45:02,000 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:49:53,878 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:49:56,703 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:50:14,473 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:50:17,166 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:54:00,412 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:54:03,395 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:54:09,687 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:54:12,005 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:54:35,456 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:54:37,853 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:54:40,694 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:54:41,438 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:54:45,385 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:54:46,178 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:54:50,068 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-15 08:54:50,883 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:55:43,659 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 08:57:37,911 basehttp 154 "GET /image_codes/3f40b1fc-5400-44ed-9fad-ecb2d21b60b1/ HTTP/1.1" 200 3318
+INFO 2021-01-15 08:57:40,663 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:57:47,560 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:57:50,676 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:57:51,177 basehttp 154 "GET /sms_codes/18515441598/?image_code=tnnj&image_code_id=3f40b1fc-5400-44ed-9fad-ecb2d21b60b1 HTTP/1.1" 200 27
+INFO 2021-01-15 08:58:12,402 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2021-01-15 08:58:12,468 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:58:12,473 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 08:58:12,988 basehttp 154 "POST /register/ HTTP/1.1" 200 73
+WARNING 2021-01-15 08:58:16,066 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 08:58:16,067 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2889
+INFO 2021-01-15 09:01:05,216 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 09:01:10,014 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:01:24,905 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 09:01:27,222 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:01:44,995 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 09:01:48,247 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:01:52,125 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 09:01:52,922 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:03:53,239 basehttp 154 "GET /image_codes/06bf650d-bceb-4eb4-8c82-1bf50948a7e2/ HTTP/1.1" 200 3176
+INFO 2021-01-15 09:04:01,476 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 09:04:08,513 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 09:04:12,040 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 09:04:12,607 basehttp 154 "GET /sms_codes/18515441598/?image_code=aqc9&image_code_id=06bf650d-bceb-4eb4-8c82-1bf50948a7e2 HTTP/1.1" 200 27
+INFO 2021-01-15 09:04:25,954 basehttp 154 "GET /usernames/yuanchu1598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 09:04:25,961 basehttp 154 "GET /mobiles/18515441598/count/ HTTP/1.1" 200 39
+INFO 2021-01-15 09:04:25,971 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2021-01-15 09:04:26,288 basehttp 154 "POST /register/ HTTP/1.1" 200 73
+WARNING 2021-01-15 09:04:29,148 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:04:29,149 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2889
