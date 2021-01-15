@@ -215,3 +215,78 @@ INFO 2021-01-15 09:04:25,971 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
 INFO 2021-01-15 09:04:26,288 basehttp 154 "POST /register/ HTTP/1.1" 200 73
 WARNING 2021-01-15 09:04:29,148 log 222 Not Found: /carts/simple/
 WARNING 2021-01-15 09:04:29,149 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2889
+INFO 2021-01-15 09:26:10,902 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-15 09:26:19,485 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:26:19,488 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3194
+WARNING 2021-01-15 09:26:24,458 log 222 Not Found: /browse_histories/
+WARNING 2021-01-15 09:26:24,459 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3206
+INFO 2021-01-15 09:26:24,550 basehttp 154 "GET /info/ HTTP/1.1" 200 131
+WARNING 2021-01-15 09:26:27,784 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:26:27,788 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3194
+WARNING 2021-01-15 09:26:38,530 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:26:38,533 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3194
+INFO 2021-01-15 09:26:48,111 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-01-15 09:26:48,351 basehttp 154 "POST /login/ HTTP/1.1" 200 75
+INFO 2021-01-15 09:26:54,396 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-01-15 09:26:54,568 basehttp 154 "POST /login/ HTTP/1.1" 200 75
+INFO 2021-01-15 09:27:04,284 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-01-15 09:27:04,568 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-01-15 09:27:06,855 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:27:06,856 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3194
+INFO 2021-01-15 09:27:56,602 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:28:14,646 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-01-15 09:28:15,089 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-01-15 09:28:17,711 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:28:17,712 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3194
+WARNING 2021-01-15 09:28:23,449 log 222 Not Found: /browse_histories/
+WARNING 2021-01-15 09:28:23,451 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3206
+INFO 2021-01-15 09:28:23,512 basehttp 154 "GET /info/ HTTP/1.1" 200 131
+WARNING 2021-01-15 09:28:29,011 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:28:29,012 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3194
+INFO 2021-01-15 09:29:03,635 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 09:29:06,119 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:30:36,215 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-15 09:30:39,209 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:31:29,388 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/oauth/models.py changed, reloading.
+INFO 2021-01-15 09:31:31,713 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:39:28,981 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-15 09:39:31,559 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:41:10,857 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-01-15 09:41:14,027 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:46:24,449 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 09:58:30,173 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-15 09:59:36,607 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 09:59:36,615 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3520
+WARNING 2021-01-15 10:01:20,146 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 10:01:20,150 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3520
+WARNING 2021-01-15 10:02:32,342 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 10:02:32,348 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3520
+INFO 2021-01-15 10:02:41,545 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+WARNING 2021-01-15 10:03:34,954 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 10:03:34,961 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3520
+WARNING 2021-01-15 10:06:06,550 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 10:06:06,553 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3520
+WARNING 2021-01-15 10:19:19,046 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 10:19:19,053 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3520
+INFO 2021-01-15 10:19:22,611 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+WARNING 2021-01-15 10:19:22,643 log 222 Not Found: /logout/
+WARNING 2021-01-15 10:19:22,644 basehttp 154 "DELETE /logout/ HTTP/1.1" 404 3505
+INFO 2021-01-15 10:20:31,916 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2021-01-15 10:20:35,140 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 10:22:15,238 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-15 10:22:26,712 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 10:22:26,719 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3674
+INFO 2021-01-15 10:23:10,157 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-01-15 10:23:10,457 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2021-01-15 10:23:13,389 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2021-01-15 10:23:39,357 basehttp 154 "GET /oauth_callback/?code=117AD68A7FF8D87206CEEABF3ACAC02B HTTP/1.1" 200 263
+INFO 2021-01-15 10:23:39,651 basehttp 154 "GET /image_codes/9a111c4f-008a-4ebb-aa17-98c37637a3af/ HTTP/1.1" 200 3183
+INFO 2021-01-15 10:23:48,404 basehttp 154 "GET /image_codes/8cda3bbb-d58c-4198-9ac3-5ed3e7cdfe06/ HTTP/1.1" 200 3137
+INFO 2021-01-15 10:23:51,515 basehttp 154 "GET /sms_codes/18515441598/?image_code=waks&image_code_id=8cda3bbb-d58c-4198-9ac3-5ed3e7cdfe06 HTTP/1.1" 200 27
+INFO 2021-01-15 10:24:38,602 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-01-15 10:24:38,939 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 27
+WARNING 2021-01-15 10:24:40,590 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 10:24:40,590 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3674
+WARNING 2021-01-15 10:24:47,048 log 222 Not Found: /browse_histories/
+WARNING 2021-01-15 10:24:47,050 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3686
+INFO 2021-01-15 10:24:47,084 basehttp 154 "GET /info/ HTTP/1.1" 200 131

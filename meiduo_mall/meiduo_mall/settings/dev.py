@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'users',  # 注册用户应用
     'corsheaders',  # 加载应用解决跨域问题
     'verifications',  # 验证码模块
+    'oauth',  # QQ登陆模块
 ]
 
 MIDDLEWARE = [
@@ -84,7 +85,7 @@ WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
-        'HOST': '192.168.209.128',  # 数据库主机
+        'HOST': '192.168.209.129',  # 数据库主机
         'PORT': 3306,  # 数据库端口
         'USER': 'yc',  # 数据库用户名
         'PASSWORD': '12345',  # 数据库用户密码
@@ -132,7 +133,7 @@ CACHES = {
     # 默认存储信息: 存到 0 号库
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.128:6379/0",
+        "LOCATION": "redis://192.168.209.129:6379/0",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -140,7 +141,7 @@ CACHES = {
     # session 信息: 存到 1 号库
     "session": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.128:6379/1",
+        "LOCATION": "redis://192.168.209.129:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -148,7 +149,7 @@ CACHES = {
     # 验证码信息: 存到 2 号库
     "verify_code": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.128:6379/2",
+        "LOCATION": "redis://192.168.209.129:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -212,3 +213,11 @@ CORS_ORIGIN_WHITELIST = [
 ]
 # 允许携带cookie
 CORS_ALLOW_CREDENTIALS = True
+
+# QQ登录参数
+# 我们申请的 客户端id
+QQ_CLIENT_ID = '101474184'
+# 我们申请的 客户端秘钥
+QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+# 我们申请时添加的: 登录成功后回调的路径
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'

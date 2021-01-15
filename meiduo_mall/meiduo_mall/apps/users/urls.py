@@ -10,4 +10,10 @@ urlpatterns = [
     path('mobiles/<mobile:mobile>/count/', views.MobileCountView.as_view()),
     # 用户注册接口
     path('register/', views.RegisterView.as_view()),
+    # 用户登陆 —— 传统登陆
+    path('login/', views.LoginView.as_view()),
+    # 用户中心
+    path('info/', views.UserInfoView.as_view()),
+    # 退出登陆
+    path('logout/', views.LogoutView.as_view()),
 ]
