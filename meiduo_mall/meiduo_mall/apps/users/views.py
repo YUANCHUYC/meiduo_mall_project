@@ -5,7 +5,9 @@ from django.contrib.auth import login, authenticate, logout
 from meiduo_mall.utils.views import LoginRequiredJSONMixin
 from django_redis import get_redis_connection
 from .models import User
-
+from users.utils import generate_verify_email_url
+from celery_tasks.email.tasks import send_verify_email
+from meiduo_mall.utils.secret import SecretOauth
 import logging, re, json
 
 logger = logging.getLogger('django')
@@ -257,6 +259,435 @@ class UserInfoView(LoginRequiredJSONMixin, View):
                 'username': user.username,
                 'mobile': user.mobile,
                 'email': user.email,
-                'email_active': True
+                'email_active': user.email_active
             }
+        })
+
+
+# 更新/保存邮箱
+class EmailView(LoginRequiredJSONMixin, View):
+    def put(self, request):
+        # 1、提取参数
+        data = json.loads(request.body.decode())
+        email = data.get('email')
+        # 2、校验参数
+        if not email:
+            return JsonResponse({'code': 400, 'errmsg': '缺少参数'})
+        if not re.match(r'^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$', email):
+            return JsonResponse({'code': 400, 'errmsg': '邮箱格式有误'})
+
+        # 3、业务处理 —— (1)、保存更新邮箱。(2)、发送验证邮件(业务性校验)
+        try:
+            user = request.user  # 必须是User对象 —— 必须登陆
+            user.email = email
+            user.save()
+        except Exception as e:
+            logger.error('数据库更新邮箱失败，错误信息: %s' % e)
+            return JsonResponse({'code': 400, 'errmsg': '数据库更新邮箱失败'})
+        # TODO：发送验证邮件
+        verify_url = generate_verify_email_url(request)
+        send_verify_email.delay(email, verify_url)
+
+        # 4、构建响应
+        return JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+
+# 激活邮箱 —— 验证token
+class VerifyEmailView(View):
+    def put(self, request):
+        # 1、提取参数
+        token = request.GET.get('token')
+        # 2、校验参数
+        if not token:
+            return JsonResponse({'code': 400, 'errmsg': '缺少参数'})
+        # 3、业务数据处理 —— 校验token有性，激活邮箱
+        user_info = SecretOauth().loads(token)
+        if user_info is None:
+            return JsonResponse({'code': 400, 'errmsg': '邮箱验证失败'})
+        user_id = user_info.get('user_id')
+        email = user_info.get('email')
+        try:
+            user = User.objects.get(id=user_id, email=email, is_active=True)
+        except User.DoesNotExist as e:
+            logger.info('邮箱验证用户不存在或已注销：%s' % e)
+            return JsonResponse({'code': 400, 'errmsg': '邮箱验证用户不存在或已经注销'})
+        else:
+            # 激活邮箱
+            user.email_active = True
+            user.save()
+        # 4、构建响应
+        return JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+
+# 修改密码
+class ChangePasswordView(LoginRequiredJSONMixin, View):
+
+    def put(self, request):
+        data = json.loads(request.body.decode())
+        old_password = data.get('old_password')
+        new_password = data.get('new_password')
+        new_password2 = data.get('new_password2')
+
+        if not all([old_password, new_password, new_password2]):
+            return JsonResponse({
+                'code': 400, 'errmsg': '缺少必要参数'
+            })
+
+        user = request.user
+        # 检查旧密码
+        if not user.check_password(old_password):
+            return JsonResponse({'code': 400, 'errmsg': '旧密码输入错误'})
+
+        if not re.match(r'^[a-zA-Z0-9]{8,20}$', new_password):
+            return JsonResponse({'code': 400, 'errmsg': '新密码格式有误'})
+        if new_password != new_password2:
+            return JsonResponse({'code': 400, 'errmsg': '新密码2次输入不一致'})
+
+        if new_password == old_password:
+            return JsonResponse({'code': 400, 'errmsg': '新旧密码不能一致'})
+
+        # 修改密码
+        user.set_password(new_password)
+        user.save()
+
+        # 请求用户状态保持
+        logout(request)
+
+        response = JsonResponse({'code': 0, 'errmsg': 'ok'})
+        response.delete_cookie('username')
+
+        return response
+
+
+from .models import Address
+
+
+#  新增用户收货地址
+class CreateAddressView(LoginRequiredJSONMixin, View):
+
+    def post(self, request):
+        # 1、提取参数
+        json_dict = json.loads(request.body.decode())
+
+        receiver = json_dict.get('receiver')
+        province_id = json_dict.get('province_id')
+        city_id = json_dict.get('city_id')
+        district_id = json_dict.get('district_id')
+        place = json_dict.get('place')
+        mobile = json_dict.get('mobile')
+        tel = json_dict.get('tel')
+        email = json_dict.get('email')
+
+        # 2、校验参数
+        # 2.1、业务性校验 —— 收货地址不能超过20个
+        user = request.user
+        count = user.addresses.filter(is_deleted=False).count()
+        if count >= 20:
+            return JsonResponse({'code': 400, 'errmsg': '最多20个地址'})
+
+        # 2.2、必要性校验
+        if not all([
+            receiver,
+            province_id,
+            city_id,
+            district_id,
+            place,
+            mobile
+        ]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少参数'})
+        # 2.2、约束性校验
+        if not re.match(r'^\w{1,20}$', receiver):
+            return JsonResponse({'code': 400, 'errmsg': '收货人昵称有误'})
+        if not re.match(r'^1[3-9]\d{9}$', mobile):
+            return JsonResponse({'code': 400, 'errmsg': '参数mobile有误'})
+
+        if tel:
+            if not re.match(r'^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$', tel):
+                return JsonResponse({'code': 400, 'errmsg': '参数tel有误'})
+        if email:
+            if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+                return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+
+        # 3、业务数据处理  —— 新建Address对象保存数据库
+        try:
+            address = Address.objects.create(
+                user=request.user,
+                province_id=province_id,
+                city_id=city_id,
+                district_id=district_id,
+                title=receiver,  # 由于新增地址接口没有传递标题，此处默认把标题设置为receiver
+                receiver=receiver,
+                place=place,
+                mobile=mobile,
+                tel=tel or '',  # tel if tel else ''
+                email=email or ''
+            )
+            # 如果用户的default_address为空，把新增的收货地址设置为用户的默认收货地址
+            user = request.user
+            if not user.default_address:
+                user.default_address = address
+                user.save()
+        except Exception as e:
+            return JsonResponse({'code': 400, 'errmsg': '保存收货地址错误'})
+
+        # 4、构建响应
+        return JsonResponse({
+            'code': 0,
+            'errmsg': 'ok',
+            'address': {
+                'id': address.id,
+                'title': address.title,
+                'receiver': address.receiver,
+                'province': address.province.name,
+                'city': address.city.name,
+                'district': address.district.name,
+                'place': address.place,
+                'mobile': address.mobile,
+                'tel': address.tel,
+                'email': address.email
+            }
+        })
+
+
+# 展示收货地址 —— 把当前登陆用户的收货地址列表数据返回
+class AddressView(LoginRequiredJSONMixin, View):
+
+    def get(self, request):
+        # 1、提取参数
+        user = request.user
+        # 2、校验参数
+        # 3、业务数据处理 —— 地址返回
+        addresses = user.addresses.filter(is_deleted=False)
+        # 构建响应参数
+        address_list = []
+        for address in addresses:
+            # 事先组织数据，记录数据
+            address_dict = {
+                'id': address.id,
+                'title': address.title,
+                'receiver': address.receiver,
+                'province': address.province.name,
+                'city': address.city.name,
+                'district': address.district.name,
+                'place': address.place,
+                'mobile': address.mobile,
+                'tel': address.tel,
+                'email': address.email
+            }
+
+            if address.id == user.default_address.id:
+                address_list.insert(0, address_dict)
+            else:
+                address_list.append(address_dict)
+
+        # 4、构建响应
+        return JsonResponse({
+            'code': 0,
+            'errmsg': 'ok',
+            'default_address_id': user.default_address.id,
+            'addresses': address_list
+        })
+
+
+class UpdateDestroyAddressView(LoginRequiredJSONMixin, View):
+
+    # 更新
+    def put(self, request, address_id):
+        # 1、提取参数
+        user = request
+
+        json_dict = json.loads(request.body.decode())
+        receiver = json_dict.get('receiver')
+        province_id = json_dict.get('province_id')
+        city_id = json_dict.get('city_id')
+        district_id = json_dict.get('district_id')
+        place = json_dict.get('place')
+        mobile = json_dict.get('mobile')
+        tel = json_dict.get('tel')
+        email = json_dict.get('email')
+
+        # 2、校验参数
+        # 2.1、业务性校验 —— 收货地址不能超过20个
+        user = request.user
+        count = user.addresses.filter(is_deleted=False).count()
+        if count >= 20:
+            return JsonResponse({'code': 400, 'errmsg': '最多20个地址'})
+
+        # 2.2、必要性校验
+        if not all([
+            receiver,
+            province_id,
+            city_id,
+            district_id,
+            place,
+            mobile
+        ]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少参数'})
+        # 2.2、约束性校验
+        if not re.match(r'^\w{1,20}$', receiver):
+            return JsonResponse({'code': 400, 'errmsg': '收货人昵称有误'})
+        if not re.match(r'^1[3-9]\d{9}$', mobile):
+            return JsonResponse({'code': 400, 'errmsg': '参数mobile有误'})
+
+        if tel:
+            if not re.match(r'^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$', tel):
+                return JsonResponse({'code': 400, 'errmsg': '参数tel有误'})
+        if email:
+            if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+                return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+
+        # 3、业务数据处理
+        json_dict.pop('province')
+        json_dict.pop('city')
+        json_dict.pop('district')
+        Address.objects.filter(
+            pk=address_id
+        ).update(**json_dict)  # update(receiver="韦小宝".....)
+        # update(city="长治市"), city市外键关联字段，必须被赋值为模型类对象.所以此处直接赋值字符串是错误的。
+
+        # 4、构建响应
+        address = Address.objects.get(pk=address_id)
+        return JsonResponse({
+            'code': 0,
+            'errmsg': 'ok',
+            'address': {
+                "id": address.id,
+                "title": address.title,
+                "receiver": address.receiver,
+                "province": address.province.name,
+                "city": address.city.name,
+                "district": address.district.name,
+                "place": address.place,
+                "mobile": address.mobile,
+                "tel": address.tel,
+                "email": address.email
+            }
+        })
+
+    # 删除 —— 逻辑删除
+    def delete(self, request, address_id):
+        user = request.user
+        try:
+            address = Address.objects.get(pk=address_id, is_deleted=False)
+            address.is_deleted = True
+            address.save()
+
+            if address.id == user.default_address.id:
+                # 如果当前删除的地址刚好是用户的默认地址，把默认地址设置为用户最新增加的地址
+                addresses = Address.objects.filter(user=user, is_deleted=False).order_by('-update_time')  # 地址查询集 或 一个空集
+                if addresses:
+                    user.default_address = addresses[0]
+                else:
+                    user.default_address = None
+                user.save()
+
+        except Exception as e:
+            print(e)
+            return JsonResponse({'code': 400, 'errmsg': '删除地址有误'})
+
+        return JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+
+# 设置默认地址
+class DefaultAddressView(LoginRequiredJSONMixin, View):
+
+    def put(self, request, address_id):
+        user = request.user
+
+        try:
+            address = Address.objects.get(pk=address_id, is_deleted=False)
+        except Address.DoesNotExist as e:
+            return JsonResponse({'code': 400, 'errmsg': '地址无效'})
+
+        user.default_address = address
+        user.save()
+
+        return JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+
+# 修改地址标题
+class UpdateTitleAddressView(LoginRequiredJSONMixin, View):
+
+    def put(self, request, address_id):
+        data = json.loads(request.body.decode())
+        title = data.get('title')
+        if not title:
+            return JsonResponse({'code': 400, 'errmsg': '缺少参数'})
+        if not re.match(r'^\w{1,20}$', title):
+            return JsonResponse({'code': 400, 'errmsg': 'title格式有误'})
+
+        try:
+            address = Address.objects.get(pk=address_id, is_deleted=False)
+        except Address.DoesNotExist as e:
+            return JsonResponse({'code': 400, 'errmsg': '地址无效'})
+
+        address.title = title
+        address.save()
+
+        return JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+
+from goods.models import SKU
+
+
+class UserBrowseHistory(LoginRequiredJSONMixin, View):
+
+    # 记录用户浏览历史
+    def post(self, request):
+        # 1、提取参数
+        data = json.loads(request.body.decode())
+        sku_id = data.get('sku_id')
+        # 2、校验参数
+        if not sku_id:
+            return JsonResponse({'code': 400, 'errmsg': '缺少sku_id参数'})
+        try:
+            sku = SKU.objects.get(pk=sku_id, is_launched=True)
+        except SKU.DoesNotExist as e:
+            return JsonResponse({'code': 400, 'errmsg': '商品无效'})
+
+        # 3、业务数据处理 —— 写入redis记录历史信息
+        user = request.user
+        conn = get_redis_connection('history')  # 3号
+        p = conn.pipeline()
+        # (1)、去重
+        p.lrem('history_%s' % user.id, 0, sku_id)  # 0表示删除所有相同sku_id
+        # (2)、存redis浏览历史
+        p.lpush('history_%s' % user.id, sku_id)  # 列表左侧插入，保证左侧最新访问
+        # (3)、截取
+        p.ltrim('history_%s' % user.id, 0, 4)  # [0, 4]表示截取5条数据
+        p.execute()
+
+        # 4、构建响应
+        return JsonResponse({
+            'code': 0,
+            'errmsg': 'ok'
+        })
+
+    # 查询用户浏览历史
+    def get(self, request):
+        # 1、提取参数
+        user = request.user
+        # 2、校验参数
+        # 3、业务数据处理 —— 访问redis获取浏览历史，访问mysql获取详情
+        conn = get_redis_connection('history')
+        # (1)、访问redis获取浏览历史
+        # sku_ids = [b'1', b'2', b'3']
+        sku_ids = conn.lrange('history_%s' % user.id, 0, -1)  # 从左到右
+        print('sku_ids: ', sku_ids)
+        # (2)、访问mysql获取详情构建响应数据
+        skus = []
+        for sku_id in sku_ids:
+            sku = SKU.objects.get(pk=sku_id)
+            skus.append({
+                'id': sku.id,
+                'name': sku.name,
+                'default_image_url': sku.default_image.url,
+                'price': sku.price
+            })
+
+        # 4、构建响应
+        return JsonResponse({
+            'code': 0,
+            'errmsg': 'ok',
+            'skus': skus
         })

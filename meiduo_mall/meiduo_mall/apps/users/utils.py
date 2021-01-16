@@ -5,6 +5,8 @@
 from django.contrib.auth.backends import ModelBackend
 from .models import User
 from django.db.models import Q
+from meiduo_mall.utils.secret import SecretOauth
+from django.conf import settings
 
 
 class UsernameMobileAuthBackend(ModelBackend):
@@ -26,3 +28,22 @@ class UsernameMobileAuthBackend(ModelBackend):
 
         # 认证成功返回用户对象
         return user
+
+
+# 构造验证链接verify_url
+def generate_verify_email_url(request):
+    """
+    功能: 加密用户数据成token，拼接完成的验证链接verify_url返回
+    参数：request请求对象 —— 通过请求对象获取user用户对象
+    返回值：完整的验证链接
+    """
+    # 加密获取token值
+    token = SecretOauth().dumps({
+        'user_id': request.user.id,
+        'username': request.user.username,
+        'email': request.user.email
+    })
+    # 拼接完整验证链接
+    verify_url = settings.EMAIL_VERIFY_URL + token
+
+    return verify_url

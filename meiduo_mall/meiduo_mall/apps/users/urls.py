@@ -16,4 +16,22 @@ urlpatterns = [
     path('info/', views.UserInfoView.as_view()),
     # 退出登陆
     path('logout/', views.LogoutView.as_view()),
+    # 邮箱
+    path('emails/', views.EmailView.as_view()),
+    # 激活邮箱
+    path('emails/verification/', views.VerifyEmailView.as_view()),
+    # 修改密码
+    path('password/', views.ChangePasswordView.as_view()),
+    # 新增用户地址
+    path('addresses/create/', views.CreateAddressView.as_view()),
+    # 展示用户地址
+    path('addresses/', views.AddressView.as_view()),
+    # 更新和删除地址
+    path('addresses/<int:address_id>/', views.UpdateDestroyAddressView.as_view()),
+    # 设置默认地址
+    path('addresses/<int:address_id>/default/', views.DefaultAddressView.as_view()),
+    # 设置地址标题
+    path('addresses/<int:address_id>/title/', views.UpdateTitleAddressView.as_view()),
+    # 记录浏览历史
+    path('browse_histories/', views.UserBrowseHistory.as_view()),
 ]

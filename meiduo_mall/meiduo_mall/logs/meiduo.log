@@ -290,3 +290,336 @@ WARNING 2021-01-15 10:24:40,590 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3
 WARNING 2021-01-15 10:24:47,048 log 222 Not Found: /browse_histories/
 WARNING 2021-01-15 10:24:47,050 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3686
 INFO 2021-01-15 10:24:47,084 basehttp 154 "GET /info/ HTTP/1.1" 200 131
+INFO 2021-01-15 11:45:37,375 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 11:46:44,018 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-01-15 11:46:44,415 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-01-15 11:46:45,980 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 11:46:45,983 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3828
+WARNING 2021-01-15 11:47:06,814 log 222 Not Found: /browse_histories/
+WARNING 2021-01-15 11:47:06,816 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3840
+INFO 2021-01-15 11:47:06,867 basehttp 154 "GET /info/ HTTP/1.1" 200 132
+WARNING 2021-01-15 11:47:10,396 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 11:47:10,397 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3828
+WARNING 2021-01-15 11:47:13,328 log 222 Not Found: /browse_histories/
+WARNING 2021-01-15 11:47:13,329 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3840
+INFO 2021-01-15 11:47:13,365 basehttp 154 "GET /info/ HTTP/1.1" 200 132
+INFO 2021-01-15 11:47:41,158 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+ERROR 2021-01-15 11:47:41,374 log 222 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 286, in put
+    verify_url = generate_verify_email_url(request)
+NameError: name 'generate_verify_email_url' is not defined
+ERROR 2021-01-15 11:47:41,376 basehttp 154 "PUT /emails/ HTTP/1.1" 500 82104
+INFO 2021-01-15 11:49:07,487 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 11:49:11,066 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2021-01-15 11:49:11,709 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2021-01-15 11:49:23,250 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYxMDcxMTM1MSwiZXhwIjoxNjEwNzE0OTUxfQ.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Inl1YW5jaHUxNTk4IiwiZW1haWwiOiJ5dWFuY2h1MTU5OEAxNjMuY29tIn0.fFLq3SwLbA4HsazTYcLR-bKZmqTCU5YP5x3HfKEwPWu9YL4AnZ29jiSSZjXwpAweobzRWV8LRAfc_flBSUmnvQ HTTP/1.1" 200 0
+WARNING 2021-01-15 11:49:23,274 log 222 Not Found: /emails/verification/
+WARNING 2021-01-15 11:49:23,275 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYxMDcxMTM1MSwiZXhwIjoxNjEwNzE0OTUxfQ.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Inl1YW5jaHUxNTk4IiwiZW1haWwiOiJ5dWFuY2h1MTU5OEAxNjMuY29tIn0.fFLq3SwLbA4HsazTYcLR-bKZmqTCU5YP5x3HfKEwPWu9YL4AnZ29jiSSZjXwpAweobzRWV8LRAfc_flBSUmnvQ HTTP/1.1" 404 4101
+WARNING 2021-01-15 11:49:31,273 log 222 Not Found: /browse_histories/
+WARNING 2021-01-15 11:49:31,275 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3840
+INFO 2021-01-15 11:49:31,325 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2021-01-15 11:50:50,638 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-15 11:50:53,192 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 11:51:12,159 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-15 11:51:20,504 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2021-01-15 11:51:21,127 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2021-01-15 11:51:29,828 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYxMDcxMTQ4MCwiZXhwIjoxNjEwNzE1MDgwfQ.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Inl1YW5jaHUxNTk4IiwiZW1haWwiOiJ5dWFuY2h1MTU5OEAxNjMuY29tIn0.ip2to39CVsMkKJceQjJeuUlyT9jWpTwYSSSvqoWk0IYE34y7k3bAhEAHi5NDj7e5oxKyKiJSxy6eMl9kOJovtA HTTP/1.1" 200 0
+INFO 2021-01-15 11:51:29,914 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYxMDcxMTQ4MCwiZXhwIjoxNjEwNzE1MDgwfQ.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Inl1YW5jaHUxNTk4IiwiZW1haWwiOiJ5dWFuY2h1MTU5OEAxNjMuY29tIn0.ip2to39CVsMkKJceQjJeuUlyT9jWpTwYSSSvqoWk0IYE34y7k3bAhEAHi5NDj7e5oxKyKiJSxy6eMl9kOJovtA HTTP/1.1" 200 27
+WARNING 2021-01-15 11:51:32,330 log 222 Not Found: /carts/simple/
+WARNING 2021-01-15 11:51:32,332 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3995
+WARNING 2021-01-15 11:52:42,950 log 222 Not Found: /browse_histories/
+WARNING 2021-01-15 11:52:42,955 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4007
+INFO 2021-01-15 11:52:42,990 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2021-01-16 02:30:19,929 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 02:30:42,595 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:30:42,600 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4151
+WARNING 2021-01-16 02:30:50,622 log 222 Not Found: /browse_histories/
+WARNING 2021-01-16 02:30:50,623 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4163
+INFO 2021-01-16 02:30:50,693 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+WARNING 2021-01-16 02:30:54,370 log 222 Not Found: /addresses/
+WARNING 2021-01-16 02:30:54,375 basehttp 154 "GET /addresses/ HTTP/1.1" 404 4142
+WARNING 2021-01-16 02:30:54,380 log 222 Not Found: /areas/
+WARNING 2021-01-16 02:30:54,382 basehttp 154 "GET /areas/ HTTP/1.1" 404 4130
+INFO 2021-01-16 02:31:50,548 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-01-16 02:31:55,389 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 02:32:01,357 log 222 Not Found: /browse_histories/
+WARNING 2021-01-16 02:32:01,358 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4484
+INFO 2021-01-16 02:32:01,396 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+WARNING 2021-01-16 02:32:03,397 log 222 Not Found: /addresses/
+WARNING 2021-01-16 02:32:03,398 basehttp 154 "GET /addresses/ HTTP/1.1" 404 4463
+INFO 2021-01-16 02:32:03,481 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-01-16 02:32:13,890 basehttp 154 "GET /areas/120000/ HTTP/1.1" 200 141
+INFO 2021-01-16 02:32:15,385 basehttp 154 "GET /areas/120100/ HTTP/1.1" 200 837
+INFO 2021-01-16 02:32:26,101 basehttp 154 "OPTIONS /addresses/create/ HTTP/1.1" 200 0
+WARNING 2021-01-16 02:32:26,115 log 222 Not Found: /addresses/create/
+WARNING 2021-01-16 02:32:26,115 basehttp 154 "POST /addresses/create/ HTTP/1.1" 404 4485
+WARNING 2021-01-16 02:32:34,921 log 222 Not Found: /addresses/create/
+WARNING 2021-01-16 02:32:34,924 basehttp 154 "POST /addresses/create/ HTTP/1.1" 404 4485
+INFO 2021-01-16 02:33:20,889 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/models.py changed, reloading.
+INFO 2021-01-16 02:33:23,621 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:35:01,658 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-16 02:35:04,825 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:35:10,808 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2021-01-16 02:35:13,570 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:35:31,209 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-16 02:35:34,132 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:35:40,694 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2021-01-16 02:35:41,877 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:36:52,829 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-16 02:36:55,874 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:37:02,299 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2021-01-16 02:37:04,747 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:37:20,181 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-16 02:37:22,502 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:37:30,051 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2021-01-16 02:37:32,586 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:37:39,423 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-01-16 02:37:41,983 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:37:47,123 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2021-01-16 02:37:48,069 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 02:38:25,704 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 02:38:33,792 log 222 Not Found: /browse_histories/
+WARNING 2021-01-16 02:38:33,793 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5359
+INFO 2021-01-16 02:38:33,837 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2021-01-16 02:38:37,148 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-01-16 02:38:37,292 log 222 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 487, in get
+    'default_address_id': user.default_address.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+ERROR 2021-01-16 02:38:37,294 basehttp 154 "GET /addresses/ HTTP/1.1" 500 81944
+INFO 2021-01-16 02:38:44,116 basehttp 154 "GET /areas/330000/ HTTP/1.1" 200 601
+INFO 2021-01-16 02:38:45,440 basehttp 154 "GET /areas/330300/ HTTP/1.1" 200 601
+INFO 2021-01-16 02:38:55,017 basehttp 154 "POST /addresses/create/ HTTP/1.1" 200 304
+INFO 2021-01-16 02:38:56,293 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-01-16 02:38:56,380 basehttp 154 "GET /addresses/ HTTP/1.1" 200 333
+INFO 2021-01-16 02:39:03,542 basehttp 154 "GET /areas/140000/ HTTP/1.1" 200 601
+INFO 2021-01-16 02:39:04,931 basehttp 154 "GET /areas/140300/ HTTP/1.1" 200 301
+INFO 2021-01-16 02:39:12,425 basehttp 154 "POST /addresses/create/ HTTP/1.1" 200 292
+INFO 2021-01-16 02:39:13,489 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-01-16 02:39:13,644 basehttp 154 "GET /addresses/ HTTP/1.1" 200 587
+INFO 2021-01-16 02:39:17,689 basehttp 154 "OPTIONS /addresses/2/default/ HTTP/1.1" 200 0
+INFO 2021-01-16 02:39:17,797 basehttp 154 "PUT /addresses/2/default/ HTTP/1.1" 200 27
+INFO 2021-01-16 02:39:18,807 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-01-16 02:39:18,891 basehttp 154 "GET /addresses/ HTTP/1.1" 200 587
+INFO 2021-01-16 02:39:24,924 basehttp 154 "OPTIONS /addresses/2/ HTTP/1.1" 200 0
+INFO 2021-01-16 02:39:25,099 basehttp 154 "DELETE /addresses/2/ HTTP/1.1" 200 27
+INFO 2021-01-16 02:39:26,639 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-01-16 02:39:26,708 basehttp 154 "GET /addresses/ HTTP/1.1" 200 333
+INFO 2021-01-16 02:39:31,253 basehttp 154 "GET /areas/130000/ HTTP/1.1" 200 701
+INFO 2021-01-16 02:39:32,337 basehttp 154 "GET /areas/130300/ HTTP/1.1" 200 459
+INFO 2021-01-16 02:39:34,063 basehttp 154 "OPTIONS /addresses/1/ HTTP/1.1" 200 0
+INFO 2021-01-16 02:39:34,186 basehttp 154 "PUT /addresses/1/ HTTP/1.1" 200 316
+INFO 2021-01-16 02:39:46,863 basehttp 154 "OPTIONS /password/ HTTP/1.1" 200 0
+INFO 2021-01-16 02:39:47,208 basehttp 154 "PUT /password/ HTTP/1.1" 200 27
+INFO 2021-01-16 02:39:56,101 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-01-16 02:39:57,484 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:39:57,487 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5347
+WARNING 2021-01-16 02:40:02,281 log 222 Not Found: /browse_histories/
+WARNING 2021-01-16 02:40:02,282 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5359
+INFO 2021-01-16 02:40:02,335 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2021-01-16 02:40:04,440 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-01-16 02:40:04,499 basehttp 154 "GET /addresses/ HTTP/1.1" 200 345
+WARNING 2021-01-16 02:42:17,643 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:42:17,649 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5347
+INFO 2021-01-16 02:42:31,218 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 02:42:37,640 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:42:37,643 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5347
+INFO 2021-01-16 02:44:55,118 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 02:45:01,663 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:45:01,668 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5347
+WARNING 2021-01-16 02:45:26,000 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:45:26,002 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5347
+INFO 2021-01-16 02:55:11,625 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 02:55:26,911 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:55:26,915 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5347
+INFO 2021-01-16 02:55:46,806 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-01-16 02:55:47,133 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-01-16 02:55:48,924 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 02:55:48,925 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5347
+INFO 2021-01-16 03:11:06,342 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-16 03:11:09,208 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:11:20,558 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-16 03:11:23,404 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:12:50,642 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-16 03:12:54,187 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:12:59,530 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-16 03:13:00,299 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:24:39,807 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 03:24:50,733 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:24:50,740 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5501
+INFO 2021-01-16 03:25:00,132 basehttp 154 "GET /search/?q=apple&page=1&page_size=6 HTTP/1.1" 200 2333
+INFO 2021-01-16 03:25:12,380 basehttp 154 "GET /search/?q=huawei&page=1&page_size=6 HTTP/1.1" 200 2667
+INFO 2021-01-16 03:25:58,766 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/goods/views.py changed, reloading.
+INFO 2021-01-16 03:26:02,598 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:26:10,420 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/goods/views.py changed, reloading.
+INFO 2021-01-16 03:26:13,594 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:26:37,046 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/goods/views.py changed, reloading.
+INFO 2021-01-16 03:26:40,212 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:26:55,909 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/goods/urls.py changed, reloading.
+INFO 2021-01-16 03:26:58,565 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:27:06,943 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 03:27:20,341 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:27:20,342 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5682
+INFO 2021-01-16 03:27:27,057 basehttp 154 "GET /search/?q=Apple&page=1&page_size=6 HTTP/1.1" 200 2333
+WARNING 2021-01-16 03:27:43,452 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:27:43,456 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5682
+INFO 2021-01-16 03:27:43,456 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2021-01-16 03:27:43,478 log 222 Not Found: /browse_histories/
+WARNING 2021-01-16 03:27:43,479 basehttp 154 "POST /browse_histories/ HTTP/1.1" 404 5695
+INFO 2021-01-16 03:28:20,417 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/goods/views.py changed, reloading.
+INFO 2021-01-16 03:28:24,051 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:28:29,674 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/goods/urls.py changed, reloading.
+INFO 2021-01-16 03:28:31,859 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:30:30,558 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 03:30:37,119 log 222 Not Found: /carts/simple/
+ERROR 2021-01-16 03:30:37,619 log 222 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 658, in post
+    p.execute()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+WARNING 2021-01-16 03:30:40,520 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:30:40,521 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6021
+ERROR 2021-01-16 03:30:40,667 log 222 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 658, in post
+    p.execute()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2021-01-16 03:30:40,668 basehttp 154 "POST /browse_histories/ HTTP/1.1" 500 111538
+INFO 2021-01-16 03:30:43,336 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+ERROR 2021-01-16 03:30:43,522 log 222 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 675, in get
+    sku_ids = conn.lrange('history_%s' % user.id, 0, -1)  # 从左到右
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2021-01-16 03:30:43,527 basehttp 154 "GET /browse_histories/ HTTP/1.1" 500 114992
+INFO 2021-01-16 03:31:10,118 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2021-01-16 03:31:12,981 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 03:31:20,547 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:31:20,547 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6021
+INFO 2021-01-16 03:31:27,915 basehttp 154 "GET /search/?q=apple&page=1&page_size=6 HTTP/1.1" 200 2333
+WARNING 2021-01-16 03:31:30,518 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:31:30,521 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6021
+INFO 2021-01-16 03:31:30,697 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+WARNING 2021-01-16 03:31:35,246 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:31:35,249 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6021
+INFO 2021-01-16 03:31:35,326 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+WARNING 2021-01-16 03:31:39,479 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:31:39,480 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6021
+INFO 2021-01-16 03:31:39,651 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:31:42,419 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2021-01-16 03:31:42,448 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 754

@@ -44,6 +44,10 @@ INSTALLED_APPS = [
     'corsheaders',  # 加载应用解决跨域问题
     'verifications',  # 验证码模块
     'oauth',  # QQ登陆模块
+    'areas',  # 地区模块
+    'contents',  # 注册 广告子应用:
+    'goods',  # 商品
+    'haystack',  # 全文检索
 ]
 
 MIDDLEWARE = [
@@ -154,6 +158,13 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
+    "history": {  # 用户浏览记录 3 号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://192.168.209.129:6379/3",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
@@ -221,3 +232,38 @@ QQ_CLIENT_ID = '101474184'
 QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
 # 我们申请时添加的: 登录成功后回调的路径
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
+
+# 发送短信的相关设置, 这些设置是当用户没有发送相关字段时, 默认使用的内容:
+# 发送短信必须进行的设置:
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# 我们使用的 发件smtp服务器 地址
+EMAIL_HOST = 'smtp.163.com'
+# 知名端口号
+EMAIL_PORT = 25
+# 下面的内容是可变的, 随后台设置的不同而改变
+# 发送邮件的邮箱
+EMAIL_HOST_USER = 'yuanchu1598@163.com'
+# 在邮箱中设置的客户端授权密码
+EMAIL_HOST_PASSWORD = 'MQBANHBLZMFIOELL'
+# 收件人看到的发件人
+EMAIL_FROM = '袁楚<yuanchu1598@163.com>'
+# 邮箱验证链接
+EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html?token='
+
+# 指定自定义的Django文件存储类
+DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.FastDFSStorage'
+
+# FastDFS相关参数
+FDFS_BASE_URL = 'http://image.meiduo.site:8888/'
+
+# Haystack
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://192.168.209.129:9200/',  # Elasticsearch服务器ip地址，端口号固定为9200
+        'INDEX_NAME': 'meiduo_mall',  # Elasticsearch建立的索引库的名称
+    },
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
