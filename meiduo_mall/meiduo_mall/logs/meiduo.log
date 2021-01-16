@@ -924,3 +924,79 @@ INFO 2021-01-16 05:45:01,301 basehttp 154 "GET /info/ HTTP/1.1" 200 142
 INFO 2021-01-16 05:45:01,346 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 39
 INFO 2021-01-16 05:45:06,656 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
 INFO 2021-01-16 05:45:08,079 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2021-01-16 05:48:50,312 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-16 05:48:54,325 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:48:57,668 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:49:05,726 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:49:05,727 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:49:05,735 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:49:05,728 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:49:05,731 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+WARNING 2021-01-16 05:49:05,872 log 222 Not Found: /meiduo_admin/skus/categories/
+WARNING 2021-01-16 05:49:05,873 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 404 8639
+WARNING 2021-01-16 05:49:05,894 log 222 Not Found: /meiduo_admin/skus/categories/
+WARNING 2021-01-16 05:49:05,900 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 404 8639
+WARNING 2021-01-16 05:49:05,912 log 222 Not Found: /meiduo_admin/goods/simple/
+WARNING 2021-01-16 05:49:05,913 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 404 8630
+WARNING 2021-01-16 05:49:05,939 log 222 Not Found: /meiduo_admin/goods/simple/
+WARNING 2021-01-16 05:49:05,984 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 404 8630
+INFO 2021-01-16 05:49:06,383 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6564
+INFO 2021-01-16 05:49:40,384 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/sku_serializers.py changed, reloading.
+INFO 2021-01-16 05:49:43,751 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:49:53,526 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/sku_views.py changed, reloading.
+INFO 2021-01-16 05:49:56,349 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:50:05,370 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-16 05:50:08,226 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:50:22,008 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/sku_serializers.py changed, reloading.
+INFO 2021-01-16 05:50:25,269 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:50:31,291 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/sku_views.py changed, reloading.
+INFO 2021-01-16 05:50:34,203 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:50:45,337 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-16 05:50:48,070 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:51:05,219 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/sku_serializers.py changed, reloading.
+INFO 2021-01-16 05:51:08,417 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:51:42,284 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/sku_views.py changed, reloading.
+INFO 2021-01-16 05:51:45,921 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:51:50,706 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-16 05:51:53,627 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:52:23,462 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/sku_serializers.py changed, reloading.
+INFO 2021-01-16 05:52:26,782 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:52:52,184 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-16 05:52:55,178 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:52:59,586 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-16 05:53:02,706 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:53:12,597 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:53:45,751 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 126
+INFO 2021-01-16 05:53:45,773 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 12997
+INFO 2021-01-16 05:53:45,884 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 126
+INFO 2021-01-16 05:53:46,106 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 12997
+INFO 2021-01-16 05:53:46,172 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6564
+INFO 2021-01-16 05:54:12,794 basehttp 154 "OPTIONS /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:54:13,152 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 286
+INFO 2021-01-16 05:54:19,745 basehttp 154 "OPTIONS /meiduo_admin/skus/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:54:26,262 basehttp 154 "POST /meiduo_admin/skus/ HTTP/1.1" 201 413
+INFO 2021-01-16 05:54:26,628 basehttp 154 "OPTIONS /meiduo_admin/goods//specs/ HTTP/1.1" 200 0
+WARNING 2021-01-16 05:54:26,682 log 222 Not Found: /meiduo_admin/goods//specs/
+WARNING 2021-01-16 05:54:26,684 basehttp 154 "GET /meiduo_admin/goods//specs/ HTTP/1.1" 404 9166
+INFO 2021-01-16 05:54:36,837 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2021-01-16 05:54:37,077 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4385
+INFO 2021-01-16 05:54:39,358 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6564
+INFO 2021-01-16 05:55:10,029 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/sku_serializers.py changed, reloading.
+INFO 2021-01-16 05:55:13,273 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:55:37,479 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/sku_serializers.py changed, reloading.
+INFO 2021-01-16 05:55:40,680 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:55:47,804 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/sku_serializers.py changed, reloading.
+INFO 2021-01-16 05:55:50,302 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:56:14,822 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:56:20,709 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4385
+INFO 2021-01-16 05:56:22,986 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 286
+INFO 2021-01-16 05:56:23,025 basehttp 154 "OPTIONS /meiduo_admin/skus/17/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:56:23,171 basehttp 154 "GET /meiduo_admin/skus/17/ HTTP/1.1" 200 413
+INFO 2021-01-16 05:56:23,649 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 286
+INFO 2021-01-16 05:56:40,357 basehttp 154 "OPTIONS /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:56:40,505 basehttp 154 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 515
+INFO 2021-01-16 05:56:51,231 basehttp 154 "PUT /meiduo_admin/skus/17/ HTTP/1.1" 200 459
+INFO 2021-01-16 05:56:51,580 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6564
+INFO 2021-01-16 05:56:54,327 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4431
+INFO 2021-01-16 05:57:00,186 basehttp 154 "DELETE /meiduo_admin/skus/17/ HTTP/1.1" 204 0
+INFO 2021-01-16 05:57:00,389 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6564
