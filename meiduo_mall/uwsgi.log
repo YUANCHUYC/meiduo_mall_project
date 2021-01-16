@@ -1,0 +1,52 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Jan 16 12:36:55 2021] ***
+compiled with version: Apple LLVM 12.0.0 (clang-1200.0.32.28) on 16 January 2021 04:33:53
+os: Darwin-19.6.0 Darwin Kernel Version 19.6.0: Tue Nov 10 00:10:30 PST 2020; root:xnu-6153.141.10~1/RELEASE_X86_64
+nodename: yuanchu.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall
+writing pidfile to uwsgi.pid
+detected binary path: /Users/yuanchu/.virtualenvs/meiduo_mall/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall
+your processes number limit is 1392
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:59708 (port auto-assigned) fd 3
+Python version: 3.9.1 (v3.9.1:1e5d33e9b9, Dec  7 2020, 12:10:52)  [Clang 6.0 (clang-600.0.57)]
+PEP 405 virtualenv detected: /Users/yuanchu/.virtualenvs/meiduo_mall
+Set PythonHome to /Users/yuanchu/.virtualenvs/meiduo_mall
+Python main interpreter initialized at 0x7f9b8c805e90
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166656 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+Traceback (most recent call last):
+  File "meiduo_mall/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/conf/__init__.py", line 176, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 49958)
+spawned uWSGI worker 1 (pid: 49960, cores: 2)
+spawned uWSGI http 1 (pid: 49961)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 49961)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
