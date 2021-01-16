@@ -68,6 +68,7 @@ class SMSCodeView(View):
             return JsonResponse({'code': 400, 'errmsg': '请勿重复发送'}, status=400)
 
         sms_code = "%06d" % random.randrange(0, 999999)
+        print("手机验证码: ", sms_code)
         # TODO: 使用yuntongxun发短信
         # (1)、初始化CCP对象
         # ccp = CCP()

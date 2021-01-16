@@ -9,6 +9,7 @@ from meiduo_mall.utils.secret import SecretOauth
 from django.conf import settings
 
 
+# 自定义认证后端
 class UsernameMobileAuthBackend(ModelBackend):
 
     # 重写该方法，实现根据username过滤，或根据mobile过滤用户对象
@@ -21,6 +22,12 @@ class UsernameMobileAuthBackend(ModelBackend):
         except User.DoesNotExist as e:
             # 如果抛出异常，说明账号有误，认证失败，返回None
             return None
+
+        # TODO: 如果当前登陆验证是后台管理站点登陆验证，必须是is_staff=True用户
+        if request is None:
+            # 是后台管理站点
+            if not user.is_staff:
+                return None  # 用户身份认证失败
 
         # 校验密码
         if not user.check_password(password):

@@ -628,7 +628,8 @@ class UpdateTitleAddressView(LoginRequiredJSONMixin, View):
         return JsonResponse({'code': 0, 'errmsg': 'ok'})
 
 
-from goods.models import SKU
+from goods.models import SKU, GoodsVisitCount
+from django.utils import timezone
 
 
 class UserBrowseHistory(LoginRequiredJSONMixin, View):
@@ -657,6 +658,28 @@ class UserBrowseHistory(LoginRequiredJSONMixin, View):
         # (3)、截取
         p.ltrim('history_%s' % user.id, 0, 4)  # [0, 4]表示截取5条数据
         p.execute()
+
+        # TODO: 记录当前sku_id商品分类访问量
+        # 当前用户访问的商品sku对应的分类
+        cur_0_time = timezone.localtime().replace(hour=0, minute=0, second=0)
+        category = sku.category
+        # 根据category分类和当日的0时刻，过滤出GoodsVisitCount访问量对象
+        # 如果对象存在，则累加；如果不存在则新建；
+        try:
+            visit = GoodsVisitCount.objects.get(
+                category=category,
+                create_time__gte=cur_0_time
+            )
+        except GoodsVisitCount.DoesNotExist as e:
+            # 找不到说明今天该分类第一次被访问，新建对象保存数据，访问量初始化为1
+            visit = GoodsVisitCount.objects.create(
+                category=category,
+                count=1
+            )
+        else:
+            # 存在，则累加count
+            visit.count += 1
+            visit.save()
 
         # 4、构建响应
         return JsonResponse({

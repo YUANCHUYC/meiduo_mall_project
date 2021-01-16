@@ -230,10 +230,9 @@ AUTH_USER_MODEL = 'users.User'
 
 # CORS跨域请求白名单设置
 CORS_ORIGIN_WHITELIST = [
-    'http://www.meiduo.site:8080'
+    'http://www.meiduo.site:8080',  # 商城页面前端
 ]
-# 允许携带cookie
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
 # QQ登录参数
 # 我们申请的 客户端id
@@ -283,5 +282,4 @@ ALIPAY_APPID = '2021000116681991'  # 应用ID
 ALIPAY_DEBUG = True  # 调试模式，对接沙箱应用时为True,对接正式应用时为False
 ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'  # 对接支付宝的网关，如果对接沙箱应用就是测试网关
 ALIPAY_RETURN_URL = "http://www.meiduo.site:8080/pay_success.html"  # 支付成功后的回调地址
-
 

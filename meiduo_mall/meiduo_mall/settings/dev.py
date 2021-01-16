@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
-import os, sys
+import os, sys, datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'carts',  # 购物车
     'orders',  # 订单
     'payment',  # 支付
+    'rest_framework',  # drf框架
+    'meiduo_admin',  # 后台管理站点应用
 ]
 
 MIDDLEWARE = [
@@ -230,7 +232,8 @@ AUTH_USER_MODEL = 'users.User'
 
 # CORS跨域请求白名单设置
 CORS_ORIGIN_WHITELIST = [
-    'http://www.meiduo.site:8080'
+    'http://www.meiduo.site:8080',  # 商城页面前端
+    'http://www.meiduo.site:8081',  # 后台管理站点前端
 ]
 # 允许携带cookie
 CORS_ALLOW_CREDENTIALS = True
@@ -283,3 +286,21 @@ ALIPAY_APPID = '2021000116681991'  # 应用ID
 ALIPAY_DEBUG = True  # 调试模式，对接沙箱应用时为True,对接正式应用时为False
 ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'  # 对接支付宝的网关，如果对接沙箱应用就是测试网关
 ALIPAY_RETURN_URL = "http://www.meiduo.site:8080/pay_success.html"  # 支付成功后的回调地址
+
+# DRF框架配置
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # JSONWebTokenAuthentication功能：从头部中按照既定的格式提取token并校验
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',  # JWT身份认证后端
+        'rest_framework.authentication.SessionAuthentication',  # session身份认证机制
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+# jwt拓展配置
+JWT_AUTH = {
+    # 设置jwt的token值的签发有效期
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=10),
+    # 指定登陆响应参数构造函数
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'meiduo_mall.utils.custom_jwt_response_handler.jwt_response_payload_handler'
+}

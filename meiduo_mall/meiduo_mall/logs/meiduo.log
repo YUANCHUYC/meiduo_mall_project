@@ -704,3 +704,223 @@ INFO 2021-01-16 04:29:19,457 basehttp 154 "GET /payment/2021011604291500000002/ 
 INFO 2021-01-16 04:30:02,982 basehttp 154 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=2021011604291500000002&method=alipay.trade.page.pay.return&total_amount=20962.00&sign=WdDRv2IrsIJL4MlEfWbRQbqbSttStGftrNTDfG0twrjsRiUGHG%2B7xzsz4qq9lRxjBpLmQx%2FqluVMbunkRcathObKfObn8oyMD8%2Bx37g6CpWI%2FEP3E21rE9HWPNpdSiCFx5TcMHqKh5vgFQialmiOyOBF%2BjexY1%2FWGVyTMYpAI%2F4qVOv%2FBuQ4u42Y1yLXExAD69i0dxFa3x4qkHGgn3oB2Ji3%2BPzlJWlPBjqfn3DU6%2B1BOf2Ivvy6rzAz6dATCUHXb1A6kpeF%2B0x4oc99p4W5TG0HovrARUIIrNPPEI8CBAdbFLTAD0dsLD5%2B0f2ZfkeK40bxLKrBasADNPpcXgNeDg%3D%3D&trade_no=2021011622001431070500966066&auth_app_id=2021000116681991&version=1.0&app_id=2021000116681991&sign_type=RSA2&seller_id=2088621954990005&timestamp=2021-01-16+12%3A29%3A56 HTTP/1.1" 200 0
 INFO 2021-01-16 04:30:03,513 basehttp 154 "PUT /payment/status/?charset=utf-8&out_trade_no=2021011604291500000002&method=alipay.trade.page.pay.return&total_amount=20962.00&sign=WdDRv2IrsIJL4MlEfWbRQbqbSttStGftrNTDfG0twrjsRiUGHG%2B7xzsz4qq9lRxjBpLmQx%2FqluVMbunkRcathObKfObn8oyMD8%2Bx37g6CpWI%2FEP3E21rE9HWPNpdSiCFx5TcMHqKh5vgFQialmiOyOBF%2BjexY1%2FWGVyTMYpAI%2F4qVOv%2FBuQ4u42Y1yLXExAD69i0dxFa3x4qkHGgn3oB2Ji3%2BPzlJWlPBjqfn3DU6%2B1BOf2Ivvy6rzAz6dATCUHXb1A6kpeF%2B0x4oc99p4W5TG0HovrARUIIrNPPEI8CBAdbFLTAD0dsLD5%2B0f2ZfkeK40bxLKrBasADNPpcXgNeDg%3D%3D&trade_no=2021011622001431070500966066&auth_app_id=2021000116681991&version=1.0&app_id=2021000116681991&sign_type=RSA2&seller_id=2088621954990005&timestamp=2021-01-16+12%3A29%3A56 HTTP/1.1" 200 71
 INFO 2021-01-16 04:30:18,339 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 04:59:34,083 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:00:45,126 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:01:00,097 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+WARNING 2021-01-16 05:01:00,220 log 222 Not Found: /meiduo_admin/authorizations/
+WARNING 2021-01-16 05:01:00,221 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 404 7207
+WARNING 2021-01-16 05:01:06,986 log 222 Not Found: /meiduo_admin/authorizations/
+WARNING 2021-01-16 05:01:06,989 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 404 7207
+INFO 2021-01-16 05:13:54,963 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 05:14:07,244 log 222 Not Found: /meiduo_admin/authorizations/
+WARNING 2021-01-16 05:14:07,247 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 404 7207
+INFO 2021-01-16 05:21:01,645 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:21:09,047 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-01-16 05:21:10,359 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:21:18,402 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-01-16 05:21:19,341 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:21:41,781 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:24:56,168 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:25:10,386 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 244
+INFO 2021-01-16 05:25:10,832 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:25:10,834 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:25:10,836 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:25:10,837 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:25:10,840 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:25:10,844 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:25:10,848 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:25:10,852 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+WARNING 2021-01-16 05:25:10,916 log 222 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2021-01-16 05:25:10,926 log 222 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2021-01-16 05:25:10,930 log 222 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2021-01-16 05:25:10,931 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7420
+WARNING 2021-01-16 05:25:10,931 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 7408
+WARNING 2021-01-16 05:25:10,932 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7405
+WARNING 2021-01-16 05:25:10,942 log 222 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2021-01-16 05:25:10,947 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7420
+WARNING 2021-01-16 05:25:10,970 log 222 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2021-01-16 05:25:10,975 log 222 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2021-01-16 05:25:10,976 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7414
+WARNING 2021-01-16 05:25:10,976 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7405
+WARNING 2021-01-16 05:25:11,237 log 222 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2021-01-16 05:25:11,251 log 222 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2021-01-16 05:25:11,253 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7405
+WARNING 2021-01-16 05:25:11,253 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7405
+INFO 2021-01-16 05:26:57,108 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-16 05:27:00,595 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:28:26,391 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 05:28:28,376 basehttp 154 "GET /image_codes/5be2b818-d156-4fed-8d87-5ca8c74e8111/ HTTP/1.1" 200 3256
+INFO 2021-01-16 05:28:33,374 basehttp 154 "GET /usernames/yuanchu111/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:28:47,209 basehttp 154 "GET /mobiles/13333333333/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:28:47,710 basehttp 154 "GET /image_codes/e18c0ba1-7137-436b-801a-efe8f4a8b2c2/ HTTP/1.1" 200 3393
+INFO 2021-01-16 05:29:43,216 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2021-01-16 05:29:46,347 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:29:50,613 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:29:57,131 basehttp 154 "GET /mobiles/13333333333/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:29:57,305 basehttp 154 "GET /sms_codes/13333333333/?image_code=rwle&image_code_id=e18c0ba1-7137-436b-801a-efe8f4a8b2c2 HTTP/1.1" 200 27
+INFO 2021-01-16 05:30:04,906 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:30:04,949 basehttp 154 "GET /mobiles/13333333333/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:30:04,966 basehttp 154 "GET /usernames/yuanchu111/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:30:05,375 basehttp 154 "POST /register/ HTTP/1.1" 200 73
+INFO 2021-01-16 05:30:06,688 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 05:30:07,899 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:30:07,959 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2021-01-16 05:30:11,278 basehttp 154 "GET /image_codes/a7065570-a711-484e-9a80-42c4ffb517f6/ HTTP/1.1" 200 3084
+INFO 2021-01-16 05:30:15,201 basehttp 154 "GET /usernames/yuanchu222/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:30:24,464 basehttp 154 "GET /mobiles/13344444444/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:30:27,209 basehttp 154 "GET /sms_codes/13344444444/?image_code=hf7q&image_code_id=a7065570-a711-484e-9a80-42c4ffb517f6 HTTP/1.1" 200 27
+INFO 2021-01-16 05:30:27,265 basehttp 154 "GET /mobiles/13344444444/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:30:35,771 basehttp 154 "GET /usernames/yuanchu222/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:30:35,786 basehttp 154 "GET /mobiles/13344444444/count/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:30:35,925 basehttp 154 "POST /register/ HTTP/1.1" 200 73
+INFO 2021-01-16 05:30:36,918 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 05:30:38,701 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2021-01-16 05:36:25,732 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 05:36:36,799 log 222 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2021-01-16 05:36:36,801 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8344
+INFO 2021-01-16 05:36:37,049 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:36:37,112 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:36:37,224 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+ERROR 2021-01-16 05:36:37,233 log 222 Internal Server Error: /meiduo_admin/statistical/day_orders/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/home_views.py", line 105, in get
+    users = User.objects.filter(
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1315, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1419, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'orders' into field. Choices are: addresses, date_joined, default_address, default_address_id, email, email_active, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobile, oauthqquser, orderinfo, password, user_permissions, username
+ERROR 2021-01-16 05:36:37,236 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 500 20965
+INFO 2021-01-16 05:36:37,330 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:36:37,401 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+ERROR 2021-01-16 05:36:37,487 log 222 Internal Server Error: /meiduo_admin/statistical/day_orders/
+Traceback (most recent call last):
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/home_views.py", line 105, in get
+    users = User.objects.filter(
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1315, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/yuanchu/.virtualenvs/meiduo_mall/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1419, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'orders' into field. Choices are: addresses, date_joined, default_address, default_address_id, email, email_active, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobile, oauthqquser, orderinfo, password, user_permissions, username
+ERROR 2021-01-16 05:36:37,495 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 500 20965
+INFO 2021-01-16 05:38:02,775 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 05:38:11,267 log 222 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2021-01-16 05:38:11,270 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8344
+INFO 2021-01-16 05:38:11,378 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:38:11,392 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:38:11,456 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:38:11,473 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:38:11,626 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:38:11,635 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2021-01-16 05:38:11,688 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:41:57,499 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 05:42:03,949 log 222 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2021-01-16 05:42:03,950 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8510
+INFO 2021-01-16 05:42:04,027 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:04,032 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:04,094 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:04,100 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:04,221 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2021-01-16 05:42:04,513 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:04,541 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:07,194 basehttp 154 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2021-01-16 05:42:07,311 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 276
+WARNING 2021-01-16 05:42:14,214 log 222 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2021-01-16 05:42:14,216 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8510
+INFO 2021-01-16 05:42:14,254 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:14,276 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:14,477 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:14,672 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:14,784 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:14,851 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2021-01-16 05:42:14,967 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:42:41,560 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 276
+INFO 2021-01-16 05:43:08,887 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/user_serializers.py changed, reloading.
+INFO 2021-01-16 05:43:12,781 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:43:29,763 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/user_views.py changed, reloading.
+INFO 2021-01-16 05:43:33,015 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:43:39,142 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/user_views.py changed, reloading.
+INFO 2021-01-16 05:43:41,958 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 05:43:52,466 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 276
+INFO 2021-01-16 05:44:18,312 basehttp 154 "OPTIONS /meiduo_admin/users/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:44:18,667 basehttp 154 "POST /meiduo_admin/users/ HTTP/1.1" 201 77
+INFO 2021-01-16 05:44:18,709 basehttp 154 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword=yuanchu444 HTTP/1.1" 200 0
+INFO 2021-01-16 05:44:18,853 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword=yuanchu444 HTTP/1.1" 200 133
+WARNING 2021-01-16 05:44:27,672 log 222 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2021-01-16 05:44:27,676 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8510
+INFO 2021-01-16 05:44:27,733 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:44:27,754 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:44:27,769 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:44:27,796 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:44:28,003 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:44:28,051 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2021-01-16 05:44:28,065 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-16 05:44:28,652 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 354
+INFO 2021-01-16 05:44:45,954 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 05:44:57,663 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-01-16 05:44:57,938 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-01-16 05:44:59,318 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 05:45:01,301 basehttp 154 "GET /info/ HTTP/1.1" 200 142
+INFO 2021-01-16 05:45:01,346 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 39
+INFO 2021-01-16 05:45:06,656 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 05:45:08,079 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
