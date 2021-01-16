@@ -9,6 +9,7 @@ from QQLoginTool.QQtool import OAuthQQ
 from .models import OAuthQQUser
 from users.models import User
 from meiduo_mall.utils.secret import SecretOauth
+from carts.utils import merge_cart_cookie_to_redis
 
 
 # QQ登陆接口1
@@ -78,6 +79,8 @@ class QQUserView(View):
             response = JsonResponse({'code': 0, 'errmsg': 'ok'})
             # 设置cookie中的username做页面展示
             response.set_cookie('username', user.username, max_age=14 * 3600 * 24)
+            # TODO: 合并购物车
+            merge_cart_cookie_to_redis(request, response)
             return response
 
     # QQ登陆接口3
@@ -137,4 +140,6 @@ class QQUserView(View):
         login(request, user)
         response = JsonResponse({'code': 0, 'errmsg': 'ok'})
         response.set_cookie('username', user.username, max_age=3600 * 24 * 14)
+        # TODO: 合并购物车
+        merge_cart_cookie_to_redis(request, response)
         return response

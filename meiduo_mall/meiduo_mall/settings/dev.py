@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'contents',  # 注册 广告子应用:
     'goods',  # 商品
     'haystack',  # 全文检索
+    'carts',  # 购物车
+    'orders',  # 订单
+    'payment',  # 支付
 ]
 
 MIDDLEWARE = [
@@ -165,6 +168,13 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
+    "carts": {  # 购物车存储 存到 5 号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://192.168.209.129:6379/5",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
@@ -267,3 +277,9 @@ HAYSTACK_CONNECTIONS = {
 
 # 当添加、修改、删除数据时，自动生成索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+# 对接支付宝
+ALIPAY_APPID = '2021000116681991'  # 应用ID
+ALIPAY_DEBUG = True  # 调试模式，对接沙箱应用时为True,对接正式应用时为False
+ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'  # 对接支付宝的网关，如果对接沙箱应用就是测试网关
+ALIPAY_RETURN_URL = "http://www.meiduo.site:8080/pay_success.html"  # 支付成功后的回调地址

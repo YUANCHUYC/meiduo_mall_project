@@ -623,3 +623,84 @@ WARNING 2021-01-16 03:31:39,480 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6
 INFO 2021-01-16 03:31:39,651 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
 INFO 2021-01-16 03:31:42,419 basehttp 154 "GET /info/ HTTP/1.1" 200 150
 INFO 2021-01-16 03:31:42,448 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 754
+INFO 2021-01-16 03:42:45,783 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-16 03:42:57,093 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:42:57,097 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6337
+INFO 2021-01-16 03:42:57,209 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:42:59,822 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+INFO 2021-01-16 03:42:59,951 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+WARNING 2021-01-16 03:43:07,187 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:43:07,190 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6337
+INFO 2021-01-16 03:43:09,550 basehttp 154 "GET /carts/ HTTP/1.1" 200 317
+WARNING 2021-01-16 03:43:20,278 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:43:20,280 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6337
+INFO 2021-01-16 03:43:25,605 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-01-16 03:43:25,740 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+WARNING 2021-01-16 03:43:35,245 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:43:35,254 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6337
+INFO 2021-01-16 03:43:43,012 basehttp 154 "GET /search/?q=huawei&page=1&page_size=6 HTTP/1.1" 200 2667
+INFO 2021-01-16 03:43:45,597 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 45
+WARNING 2021-01-16 03:43:45,657 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:43:45,658 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6337
+INFO 2021-01-16 03:43:48,149 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:43:52,878 basehttp 154 "GET /carts/ HTTP/1.1" 200 355
+INFO 2021-01-16 03:44:02,229 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-01-16 03:44:03,756 log 222 Not Found: /carts/simple/
+WARNING 2021-01-16 03:44:03,759 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6337
+INFO 2021-01-16 03:44:06,772 basehttp 154 "GET /carts/ HTTP/1.1" 200 630
+INFO 2021-01-16 03:44:10,204 basehttp 154 "PUT /carts/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:11,509 basehttp 154 "PUT /carts/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:14,462 basehttp 154 "GET /carts/ HTTP/1.1" 200 630
+INFO 2021-01-16 03:44:18,634 basehttp 154 "DELETE /carts/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:21,783 basehttp 154 "OPTIONS /carts/selection/ HTTP/1.1" 200 0
+INFO 2021-01-16 03:44:21,886 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:22,441 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:22,872 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:23,078 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:23,253 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:44:23,945 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27
+INFO 2021-01-16 03:46:13,987 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/carts/views.py changed, reloading.
+INFO 2021-01-16 03:46:17,087 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:46:30,975 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/oauth/urls.py changed, reloading.
+INFO 2021-01-16 03:46:33,569 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:46:44,529 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 317
+INFO 2021-01-16 03:56:07,779 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 03:56:18,403 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2021-01-16 03:56:18,440 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 754
+INFO 2021-01-16 03:56:21,624 basehttp 154 "GET /carts/ HTTP/1.1" 200 355
+INFO 2021-01-16 03:56:24,907 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 608
+INFO 2021-01-16 03:56:28,711 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 608
+INFO 2021-01-16 03:56:33,294 basehttp 154 "OPTIONS /orders/commit/ HTTP/1.1" 200 0
+INFO 2021-01-16 03:56:33,474 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 65
+INFO 2021-01-16 04:21:16,554 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 04:23:06,903 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 04:23:21,079 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 04:23:29,484 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 04:23:29,494 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2021-01-16 04:23:31,726 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+INFO 2021-01-16 04:23:36,935 basehttp 154 "GET /carts/ HTTP/1.1" 200 287
+INFO 2021-01-16 04:23:39,981 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 540
+INFO 2021-01-16 04:23:45,077 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 65
+INFO 2021-01-16 04:23:56,733 basehttp 154 "GET /payment/2021011604234500000002/ HTTP/1.1" 200 909
+INFO 2021-01-16 04:25:45,205 basehttp 154 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=2021011604234500000002&method=alipay.trade.page.pay.return&total_amount=22806.00&sign=Z%2BqJ9L59O8yYfOShMRtVps%2Fr%2F0Ei6BYRkEQZiH7hPHcpSdm26clDDi6viRo%2F51dNoCWMnOCq8fZID9wJm8W26jypQ6g6Crw8qBRnnCKUT9Qp2O30fgkwptljptZ%2BVSk1ffzFZeI5L9MsVPHkzd%2Bl%2FDagKP3cKYvuxNS%2B6BZTEIkoiqAGiAHPKGQ9mpiPE%2BBhWV3GrLQwvMtBUchDqCu3DHjsQaAKNgUDOLj1KZQTtNuFvAfU25laKSCxC6gfDMIWLXDkbOoOPZGb1yVFqsLiGKAH10btxQsr5Xrk%2BXbKQCneCB01Oe0slPbsJgGsEhVjFlXWfn%2BuJD4GRkGZkJL6NA%3D%3D&trade_no=2021011622001431070500965566&auth_app_id=2021000116681991&version=1.0&app_id=2021000116681991&sign_type=RSA2&seller_id=2088621954990005&timestamp=2021-01-16+12%3A25%3A38 HTTP/1.1" 200 0
+WARNING 2021-01-16 04:25:45,218 base 100 Method Not Allowed (PUT): /payment/status/
+WARNING 2021-01-16 04:25:45,223 log 222 Method Not Allowed: /payment/status/
+WARNING 2021-01-16 04:25:45,225 basehttp 154 "PUT /payment/status/?charset=utf-8&out_trade_no=2021011604234500000002&method=alipay.trade.page.pay.return&total_amount=22806.00&sign=Z%2BqJ9L59O8yYfOShMRtVps%2Fr%2F0Ei6BYRkEQZiH7hPHcpSdm26clDDi6viRo%2F51dNoCWMnOCq8fZID9wJm8W26jypQ6g6Crw8qBRnnCKUT9Qp2O30fgkwptljptZ%2BVSk1ffzFZeI5L9MsVPHkzd%2Bl%2FDagKP3cKYvuxNS%2B6BZTEIkoiqAGiAHPKGQ9mpiPE%2BBhWV3GrLQwvMtBUchDqCu3DHjsQaAKNgUDOLj1KZQTtNuFvAfU25laKSCxC6gfDMIWLXDkbOoOPZGb1yVFqsLiGKAH10btxQsr5Xrk%2BXbKQCneCB01Oe0slPbsJgGsEhVjFlXWfn%2BuJD4GRkGZkJL6NA%3D%3D&trade_no=2021011622001431070500965566&auth_app_id=2021000116681991&version=1.0&app_id=2021000116681991&sign_type=RSA2&seller_id=2088621954990005&timestamp=2021-01-16+12%3A25%3A38 HTTP/1.1" 405 0
+INFO 2021-01-16 04:27:58,820 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/payment/urls.py changed, reloading.
+INFO 2021-01-16 04:28:01,956 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-16 04:28:37,163 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 04:28:45,864 basehttp 154 "GET /search/?q=Apple&page=1&page_size=6 HTTP/1.1" 200 2333
+INFO 2021-01-16 04:28:48,864 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2021-01-16 04:28:48,874 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2021-01-16 04:28:50,707 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+INFO 2021-01-16 04:28:58,419 basehttp 154 "GET /search/?q=huawei&page=1&page_size=6 HTTP/1.1" 200 2667
+INFO 2021-01-16 04:29:01,474 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2021-01-16 04:29:01,506 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 291
+INFO 2021-01-16 04:29:03,004 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+INFO 2021-01-16 04:29:07,771 basehttp 154 "GET /carts/ HTTP/1.1" 200 642
+INFO 2021-01-16 04:29:10,517 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 877
+INFO 2021-01-16 04:29:15,872 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 65
+INFO 2021-01-16 04:29:19,457 basehttp 154 "GET /payment/2021011604291500000002/ HTTP/1.1" 200 901
+INFO 2021-01-16 04:30:02,982 basehttp 154 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=2021011604291500000002&method=alipay.trade.page.pay.return&total_amount=20962.00&sign=WdDRv2IrsIJL4MlEfWbRQbqbSttStGftrNTDfG0twrjsRiUGHG%2B7xzsz4qq9lRxjBpLmQx%2FqluVMbunkRcathObKfObn8oyMD8%2Bx37g6CpWI%2FEP3E21rE9HWPNpdSiCFx5TcMHqKh5vgFQialmiOyOBF%2BjexY1%2FWGVyTMYpAI%2F4qVOv%2FBuQ4u42Y1yLXExAD69i0dxFa3x4qkHGgn3oB2Ji3%2BPzlJWlPBjqfn3DU6%2B1BOf2Ivvy6rzAz6dATCUHXb1A6kpeF%2B0x4oc99p4W5TG0HovrARUIIrNPPEI8CBAdbFLTAD0dsLD5%2B0f2ZfkeK40bxLKrBasADNPpcXgNeDg%3D%3D&trade_no=2021011622001431070500966066&auth_app_id=2021000116681991&version=1.0&app_id=2021000116681991&sign_type=RSA2&seller_id=2088621954990005&timestamp=2021-01-16+12%3A29%3A56 HTTP/1.1" 200 0
+INFO 2021-01-16 04:30:03,513 basehttp 154 "PUT /payment/status/?charset=utf-8&out_trade_no=2021011604291500000002&method=alipay.trade.page.pay.return&total_amount=20962.00&sign=WdDRv2IrsIJL4MlEfWbRQbqbSttStGftrNTDfG0twrjsRiUGHG%2B7xzsz4qq9lRxjBpLmQx%2FqluVMbunkRcathObKfObn8oyMD8%2Bx37g6CpWI%2FEP3E21rE9HWPNpdSiCFx5TcMHqKh5vgFQialmiOyOBF%2BjexY1%2FWGVyTMYpAI%2F4qVOv%2FBuQ4u42Y1yLXExAD69i0dxFa3x4qkHGgn3oB2Ji3%2BPzlJWlPBjqfn3DU6%2B1BOf2Ivvy6rzAz6dATCUHXb1A6kpeF%2B0x4oc99p4W5TG0HovrARUIIrNPPEI8CBAdbFLTAD0dsLD5%2B0f2ZfkeK40bxLKrBasADNPpcXgNeDg%3D%3D&trade_no=2021011622001431070500966066&auth_app_id=2021000116681991&version=1.0&app_id=2021000116681991&sign_type=RSA2&seller_id=2088621954990005&timestamp=2021-01-16+12%3A29%3A56 HTTP/1.1" 200 71
+INFO 2021-01-16 04:30:18,339 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44

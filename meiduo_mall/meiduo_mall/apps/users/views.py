@@ -8,6 +8,7 @@ from .models import User
 from users.utils import generate_verify_email_url
 from celery_tasks.email.tasks import send_verify_email
 from meiduo_mall.utils.secret import SecretOauth
+from carts.utils import merge_cart_cookie_to_redis
 import logging, re, json
 
 logger = logging.getLogger('django')
@@ -226,7 +227,7 @@ class LoginView(View):
         response.set_cookie('username', user.username, max_age=3600 * 24 * 14)
 
         # TODO: 合并购物车
-        # merge_cart_cookie_to_redis(request, response)
+        merge_cart_cookie_to_redis(request, response)
 
         return response
 
