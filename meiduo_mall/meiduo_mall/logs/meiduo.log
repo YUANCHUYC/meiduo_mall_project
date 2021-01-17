@@ -1000,3 +1000,52 @@ INFO 2021-01-16 05:56:51,580 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesi
 INFO 2021-01-16 05:56:54,327 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4431
 INFO 2021-01-16 05:57:00,186 basehttp 154 "DELETE /meiduo_admin/skus/17/ HTTP/1.1" 204 0
 INFO 2021-01-16 05:57:00,389 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6564
+INFO 2021-01-17 03:40:55,051 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 03:42:55,015 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:55,442 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 244
+INFO 2021-01-17 03:42:56,100 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:56,116 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:56,119 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:56,120 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:56,135 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:56,136 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:56,138 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2021-01-17 03:42:56,161 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2021-01-17 03:42:56,226 log 222 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2021-01-17 03:42:56,228 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 9557
+INFO 2021-01-17 03:42:56,433 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2021-01-17 03:42:56,470 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2021-01-17 03:42:56,490 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-17 03:42:56,577 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-17 03:42:56,673 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2021-01-17 03:42:56,729 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2021-01-17 03:42:56,770 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2021-01-17 03:43:14,292 basehttp 154 "OPTIONS /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2021-01-17 03:43:14,685 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 10893
+INFO 2021-01-17 03:57:31,607 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/spu_serializers.py changed, reloading.
+INFO 2021-01-17 03:57:34,834 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 04:00:53,199 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 04:01:03,756 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 10893
+INFO 2021-01-17 04:01:05,810 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:01:05,827 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:01:05,969 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 62
+INFO 2021-01-17 04:01:06,084 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 975
+INFO 2021-01-17 04:01:32,620 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/4/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:01:32,794 basehttp 154 "GET /meiduo_admin/goods/channel/categories/4/ HTTP/1.1" 200 97
+INFO 2021-01-17 04:01:35,406 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/45/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:01:35,531 basehttp 154 "GET /meiduo_admin/goods/channel/categories/45/ HTTP/1.1" 200 184
+INFO 2021-01-17 04:01:53,787 basehttp 154 "OPTIONS /meiduo_admin/goods/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:01:54,091 basehttp 154 "POST /meiduo_admin/goods/ HTTP/1.1" 201 326
+INFO 2021-01-17 04:01:56,457 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 11220
+INFO 2021-01-17 04:02:03,809 basehttp 154 "OPTIONS /meiduo_admin/goods/4/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:02:03,848 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 62
+INFO 2021-01-17 04:02:03,972 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 975
+INFO 2021-01-17 04:02:03,978 basehttp 154 "GET /meiduo_admin/goods/4/ HTTP/1.1" 200 326
+INFO 2021-01-17 04:02:04,679 basehttp 154 "GET /meiduo_admin/goods/channel/categories/45/ HTTP/1.1" 200 184
+INFO 2021-01-17 04:02:04,692 basehttp 154 "GET /meiduo_admin/goods/channel/categories/4/ HTTP/1.1" 200 97
+INFO 2021-01-17 04:02:14,456 basehttp 154 "PUT /meiduo_admin/goods/4/ HTTP/1.1" 200 345
+INFO 2021-01-17 04:02:16,731 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 11239
+INFO 2021-01-17 04:02:25,344 basehttp 154 "DELETE /meiduo_admin/goods/4/ HTTP/1.1" 204 0
+INFO 2021-01-17 04:02:25,407 basehttp 154 "OPTIONS /meiduo_admin/goods/?pagesize=10 HTTP/1.1" 200 0
+INFO 2021-01-17 04:02:25,621 basehttp 154 "GET /meiduo_admin/goods/?pagesize=10 HTTP/1.1" 200 10893
+INFO 2021-01-17 04:02:31,582 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 10893

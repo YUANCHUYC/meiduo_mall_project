@@ -5,6 +5,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 from meiduo_admin.views.home_views import *
 from meiduo_admin.views.user_views import *
 from meiduo_admin.views.sku_views import *
+from meiduo_admin.views.spu_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -39,4 +40,21 @@ urlpatterns = [
     path('goods/simple/', SPUSimpleView.as_view()),
     # 新建SKU用户选择的SPU所关联的规格和选项信息
     path('goods/<int:pk>/specs/', SpecOptView.as_view()),
+
+    # SPU管理
+    path('goods/', SPUModelView.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('goods/<int:pk>/', SPUModelView.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
+    # 新建SPU可选品牌
+    path('goods/brands/simple/', BrandSimpleView.as_view()),
+    # 新建SPU可选一级分类
+    path('goods/channel/categories/', CateSimpleListView.as_view()),
+    # 新建SPU可选二三级分类
+    path('goods/channel/categories/<int:pk>/', CateSimpleListView.as_view()),
 ]
