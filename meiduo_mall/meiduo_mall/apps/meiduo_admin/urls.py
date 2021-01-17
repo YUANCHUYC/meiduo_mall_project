@@ -7,6 +7,7 @@ from meiduo_admin.views.user_views import *
 from meiduo_admin.views.sku_views import *
 from meiduo_admin.views.spu_views import *
 from meiduo_admin.views.spec_views import *
+from meiduo_admin.views.option_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -65,6 +66,19 @@ urlpatterns = [
         'post': 'create'
     })),
     path('goods/specs/<int:pk>/', SpecViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
+
+    # 新建选项可选规格
+    path('goods/specs/simple/', SpecSimpleListView.as_view()),
+    # 选项表管理
+    path('specs/options/', OptionViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('specs/options/<int:pk>/', OptionViewSet.as_view({
         'get': 'retrieve',
         'put': 'update',
         'delete': 'destroy'

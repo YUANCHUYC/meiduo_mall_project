@@ -1067,3 +1067,29 @@ INFO 2021-01-17 04:05:37,792 basehttp 154 "DELETE /meiduo_admin/goods/specs/8/ H
 INFO 2021-01-17 04:05:37,964 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 539
 INFO 2021-01-17 04:05:44,162 basehttp 154 "POST /meiduo_admin/goods/specs/ HTTP/1.1" 201 71
 INFO 2021-01-17 04:05:44,311 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 611
+INFO 2021-01-17 04:07:55,955 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-17 04:07:59,412 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 04:08:08,939 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/option_serializers.py changed, reloading.
+INFO 2021-01-17 04:08:11,993 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 04:08:19,834 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/option_views.py changed, reloading.
+INFO 2021-01-17 04:08:22,699 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 04:08:38,744 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 04:08:55,078 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:08:55,079 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:08:55,080 basehttp 154 "OPTIONS /meiduo_admin/specs/options/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2021-01-17 04:08:55,500 basehttp 154 "GET /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 207
+INFO 2021-01-17 04:08:55,587 basehttp 154 "GET /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 207
+INFO 2021-01-17 04:08:55,670 basehttp 154 "GET /meiduo_admin/specs/options/?page=1&pagesize=10 HTTP/1.1" 200 952
+INFO 2021-01-17 04:09:20,044 basehttp 154 "OPTIONS /meiduo_admin/specs/options/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:09:20,174 basehttp 154 "POST /meiduo_admin/specs/options/ HTTP/1.1" 201 89
+INFO 2021-01-17 04:09:20,204 basehttp 154 "OPTIONS /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 0
+INFO 2021-01-17 04:09:20,520 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 952
+INFO 2021-01-17 04:09:23,758 basehttp 154 "OPTIONS /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 0
+INFO 2021-01-17 04:09:23,872 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 778
+INFO 2021-01-17 04:09:25,831 basehttp 154 "OPTIONS /meiduo_admin/specs/options/22/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:09:25,959 basehttp 154 "GET /meiduo_admin/specs/options/22/ HTTP/1.1" 200 89
+INFO 2021-01-17 04:09:29,459 basehttp 154 "PUT /meiduo_admin/specs/options/22/ HTTP/1.1" 200 95
+INFO 2021-01-17 04:09:29,702 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 952
+INFO 2021-01-17 04:09:32,101 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 784
+INFO 2021-01-17 04:09:36,093 basehttp 154 "DELETE /meiduo_admin/specs/options/22/ HTTP/1.1" 204 0
+INFO 2021-01-17 04:09:36,320 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 952
