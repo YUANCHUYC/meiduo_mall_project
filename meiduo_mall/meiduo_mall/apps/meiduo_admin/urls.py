@@ -12,6 +12,7 @@ from meiduo_admin.views.image_views import *
 from meiduo_admin.views.order_views import *
 from meiduo_admin.views.perm_views import *
 from meiduo_admin.views.group_views import *
+from meiduo_admin.views.admin_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -139,4 +140,17 @@ urlpatterns = [
     })),
     # 新建分组可选权限
     path('permission/simple/', GroupPermListView.as_view()),
+
+    # 管理员管理
+    path('permission/admins/', AdminViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('permission/admins/<int:pk>/', AdminViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
+    # 新建管理员用户可选分组
+    path('permission/groups/simple/', AdminGroupListView.as_view()),
 ]
