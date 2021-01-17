@@ -10,6 +10,7 @@ from meiduo_admin.views.spec_views import *
 from meiduo_admin.views.option_views import *
 from meiduo_admin.views.image_views import *
 from meiduo_admin.views.order_views import *
+from meiduo_admin.views.perm_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -111,5 +112,18 @@ urlpatterns = [
     path('orders/<str:pk>/status/', OrderView.as_view({
         'patch': 'partial_update'
     })),
+
+    # 权限管理
+    path('permission/perms/', PermViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('permission/perms/<int:pk>/', PermViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
+    # 新增权限可选类型
+    path('permission/content_types/', ContentTypeListView.as_view()),
 
 ]

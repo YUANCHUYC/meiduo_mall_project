@@ -1255,3 +1255,27 @@ INFO 2021-01-17 05:23:13,695 basehttp 154 "PATCH /meiduo_admin/orders/2021011604
 INFO 2021-01-17 05:23:13,900 basehttp 154 "GET /meiduo_admin/orders/2021011604291500000002/ HTTP/1.1" 200 703
 INFO 2021-01-17 05:23:18,269 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
 INFO 2021-01-17 05:23:20,264 basehttp 154 "GET /meiduo_admin/orders/2021011604291500000002/ HTTP/1.1" 200 703
+INFO 2021-01-17 05:26:15,726 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-17 05:26:19,227 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:26:22,797 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:26:29,000 basehttp 154 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2021-01-17 05:26:29,001 basehttp 154 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2021-01-17 05:26:29,001 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10&ordering=id HTTP/1.1" 200 0
+INFO 2021-01-17 05:26:29,320 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 773
+INFO 2021-01-17 05:26:29,345 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10&ordering=id HTTP/1.1" 200 881
+INFO 2021-01-17 05:26:29,490 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 773
+INFO 2021-01-17 05:27:07,634 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/ HTTP/1.1" 200 0
+INFO 2021-01-17 05:27:08,039 basehttp 154 "POST /meiduo_admin/permission/perms/ HTTP/1.1" 201 64
+INFO 2021-01-17 05:27:08,345 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10&ordering=id HTTP/1.1" 200 881
+INFO 2021-01-17 05:27:10,413 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/?page=11&pagesize=10&ordering=id HTTP/1.1" 200 0
+INFO 2021-01-17 05:27:10,564 basehttp 154 "GET /meiduo_admin/permission/perms/?page=11&pagesize=10&ordering=id HTTP/1.1" 200 124
+INFO 2021-01-17 05:27:12,880 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/101/ HTTP/1.1" 200 0
+INFO 2021-01-17 05:27:13,006 basehttp 154 "GET /meiduo_admin/permission/perms/101/ HTTP/1.1" 200 64
+INFO 2021-01-17 05:27:17,306 basehttp 154 "PUT /meiduo_admin/permission/perms/101/ HTTP/1.1" 200 68
+INFO 2021-01-17 05:27:17,418 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10&ordering=id HTTP/1.1" 200 881
+INFO 2021-01-17 05:27:19,760 basehttp 154 "GET /meiduo_admin/permission/perms/?page=11&pagesize=10&ordering=id HTTP/1.1" 200 128
+INFO 2021-01-17 05:27:22,631 basehttp 154 "DELETE /meiduo_admin/permission/perms/101/ HTTP/1.1" 204 0
+INFO 2021-01-17 05:27:22,824 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10&ordering=id HTTP/1.1" 200 881
+INFO 2021-01-17 05:27:24,901 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/?page=10&pagesize=10&ordering=id HTTP/1.1" 200 0
+INFO 2021-01-17 05:27:25,016 basehttp 154 "GET /meiduo_admin/permission/perms/?page=10&pagesize=10&ordering=id HTTP/1.1" 200 934
+INFO 2021-01-17 05:27:26,579 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10&ordering=id HTTP/1.1" 200 881
