@@ -11,6 +11,7 @@ from meiduo_admin.views.option_views import *
 from meiduo_admin.views.image_views import *
 from meiduo_admin.views.order_views import *
 from meiduo_admin.views.perm_views import *
+from meiduo_admin.views.group_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -126,4 +127,16 @@ urlpatterns = [
     # 新增权限可选类型
     path('permission/content_types/', ContentTypeListView.as_view()),
 
+    # 分组管理
+    path('permission/groups/', GroupViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('permission/groups/<int:pk>/', GroupViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
+    # 新建分组可选权限
+    path('permission/simple/', GroupPermListView.as_view()),
 ]
