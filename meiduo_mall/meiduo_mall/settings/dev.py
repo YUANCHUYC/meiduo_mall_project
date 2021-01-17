@@ -304,3 +304,7 @@ JWT_AUTH = {
     # 指定登陆响应参数构造函数
     'JWT_RESPONSE_PAYLOAD_HANDLER': 'meiduo_mall.utils.custom_jwt_response_handler.jwt_response_payload_handler'
 }
+
+# BASE_DIR是内层目录
+# FDFS_PATH是FDFS配置文件路径
+FDFS_PATH = os.path.join(BASE_DIR, 'utils/client.conf')

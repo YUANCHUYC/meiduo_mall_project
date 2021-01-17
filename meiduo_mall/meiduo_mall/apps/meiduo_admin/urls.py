@@ -8,6 +8,7 @@ from meiduo_admin.views.sku_views import *
 from meiduo_admin.views.spu_views import *
 from meiduo_admin.views.spec_views import *
 from meiduo_admin.views.option_views import *
+from meiduo_admin.views.image_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -83,4 +84,20 @@ urlpatterns = [
         'put': 'update',
         'delete': 'destroy'
     })),
+
+    # 图片管理
+    path('skus/images/', ImageViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('skus/images/<int:pk>/', ImageViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
+    # 新建图片可选sku
+    path('skus/simple/', ImageViewSet.as_view({
+        'get': 'simple'
+    })),
+
 ]
