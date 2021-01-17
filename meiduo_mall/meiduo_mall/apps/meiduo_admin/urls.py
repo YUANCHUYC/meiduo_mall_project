@@ -6,6 +6,7 @@ from meiduo_admin.views.home_views import *
 from meiduo_admin.views.user_views import *
 from meiduo_admin.views.sku_views import *
 from meiduo_admin.views.spu_views import *
+from meiduo_admin.views.spec_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -57,4 +58,15 @@ urlpatterns = [
     path('goods/channel/categories/', CateSimpleListView.as_view()),
     # 新建SPU可选二三级分类
     path('goods/channel/categories/<int:pk>/', CateSimpleListView.as_view()),
+
+    # 规格表管理
+    path('goods/specs/', SpecViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('goods/specs/<int:pk>/', SpecViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
 ]

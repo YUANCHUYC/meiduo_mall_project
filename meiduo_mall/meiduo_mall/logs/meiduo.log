@@ -1049,3 +1049,21 @@ INFO 2021-01-17 04:02:25,344 basehttp 154 "DELETE /meiduo_admin/goods/4/ HTTP/1.
 INFO 2021-01-17 04:02:25,407 basehttp 154 "OPTIONS /meiduo_admin/goods/?pagesize=10 HTTP/1.1" 200 0
 INFO 2021-01-17 04:02:25,621 basehttp 154 "GET /meiduo_admin/goods/?pagesize=10 HTTP/1.1" 200 10893
 INFO 2021-01-17 04:02:31,582 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 10893
+INFO 2021-01-17 04:05:06,410 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 04:05:11,724 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:05:11,725 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:05:11,725 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2021-01-17 04:05:11,986 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 126
+INFO 2021-01-17 04:05:12,062 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 539
+INFO 2021-01-17 04:05:12,132 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 126
+INFO 2021-01-17 04:05:26,281 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:05:26,457 basehttp 154 "POST /meiduo_admin/goods/specs/ HTTP/1.1" 201 71
+INFO 2021-01-17 04:05:26,639 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 611
+INFO 2021-01-17 04:05:29,316 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/8/ HTTP/1.1" 200 0
+INFO 2021-01-17 04:05:29,440 basehttp 154 "GET /meiduo_admin/goods/specs/8/ HTTP/1.1" 200 71
+INFO 2021-01-17 04:05:31,954 basehttp 154 "PUT /meiduo_admin/goods/specs/8/ HTTP/1.1" 200 63
+INFO 2021-01-17 04:05:32,200 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 603
+INFO 2021-01-17 04:05:37,792 basehttp 154 "DELETE /meiduo_admin/goods/specs/8/ HTTP/1.1" 204 0
+INFO 2021-01-17 04:05:37,964 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 539
+INFO 2021-01-17 04:05:44,162 basehttp 154 "POST /meiduo_admin/goods/specs/ HTTP/1.1" 201 71
+INFO 2021-01-17 04:05:44,311 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 611
