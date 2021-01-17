@@ -9,6 +9,7 @@ from meiduo_admin.views.spu_views import *
 from meiduo_admin.views.spec_views import *
 from meiduo_admin.views.option_views import *
 from meiduo_admin.views.image_views import *
+from meiduo_admin.views.order_views import *
 
 urlpatterns = [
     # 登陆接口，签发token
@@ -98,6 +99,17 @@ urlpatterns = [
     # 新建图片可选sku
     path('skus/simple/', ImageViewSet.as_view({
         'get': 'simple'
+    })),
+
+    # 订单管理
+    path('orders/', OrderView.as_view({
+        'get': 'list'
+    })),
+    path('orders/<str:pk>/', OrderView.as_view({
+        'get': 'retrieve',
+    })),
+    path('orders/<str:pk>/status/', OrderView.as_view({
+        'patch': 'partial_update'
     })),
 
 ]

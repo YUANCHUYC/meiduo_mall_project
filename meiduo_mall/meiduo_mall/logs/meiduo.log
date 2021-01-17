@@ -1208,3 +1208,50 @@ INFO 2021-01-17 05:07:58,295 basehttp 154 "OPTIONS /meiduo_admin/skus/images/12/
 INFO 2021-01-17 05:07:58,444 basehttp 154 "GET /meiduo_admin/skus/images/12/ HTTP/1.1" 200 109
 INFO 2021-01-17 05:08:24,980 basehttp 154 "OPTIONS /meiduo_admin/skus/images/11/ HTTP/1.1" 200 0
 INFO 2021-01-17 05:08:25,306 basehttp 154 "GET /meiduo_admin/skus/images/11/ HTTP/1.1" 200 109
+INFO 2021-01-17 05:12:50,906 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-17 05:12:54,037 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:13:11,130 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2021-01-17 05:13:11,467 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
+INFO 2021-01-17 05:13:16,294 basehttp 154 "OPTIONS /meiduo_admin/orders/2021011603563300000002/ HTTP/1.1" 200 0
+WARNING 2021-01-17 05:13:16,318 log 222 Not Found: /meiduo_admin/orders/2021011603563300000002/
+WARNING 2021-01-17 05:13:16,320 basehttp 154 "GET /meiduo_admin/orders/2021011603563300000002/ HTTP/1.1" 404 11908
+INFO 2021-01-17 05:13:17,771 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
+INFO 2021-01-17 05:13:47,353 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/order_serializers.py changed, reloading.
+INFO 2021-01-17 05:13:50,549 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:14:00,231 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/order_serializers.py changed, reloading.
+INFO 2021-01-17 05:14:03,203 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:14:33,985 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/order_serializers.py changed, reloading.
+INFO 2021-01-17 05:14:37,267 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:14:43,931 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/order_serializers.py changed, reloading.
+INFO 2021-01-17 05:14:47,080 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:15:03,149 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/order_views.py changed, reloading.
+INFO 2021-01-17 05:15:06,039 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:15:15,220 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-17 05:15:17,191 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:15:40,718 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-17 05:15:43,672 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:17:23,869 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:17:42,685 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2021-01-17 05:17:46,408 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:17:57,192 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:19:46,684 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/order_serializers.py changed, reloading.
+INFO 2021-01-17 05:19:49,727 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:20:49,289 autoreload 217 /Users/yuanchu/Desktop/meiduo_mall_project/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/order_views.py changed, reloading.
+INFO 2021-01-17 05:20:52,488 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:21:44,895 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:21:57,313 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
+INFO 2021-01-17 05:21:58,924 basehttp 154 "GET /meiduo_admin/orders/2021011603563300000002/ HTTP/1.1" 200 482
+INFO 2021-01-17 05:22:04,133 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
+INFO 2021-01-17 05:22:05,141 basehttp 154 "OPTIONS /meiduo_admin/orders/2021011604234500000002/ HTTP/1.1" 200 0
+INFO 2021-01-17 05:22:05,295 basehttp 154 "GET /meiduo_admin/orders/2021011604234500000002/ HTTP/1.1" 200 446
+INFO 2021-01-17 05:22:06,458 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
+INFO 2021-01-17 05:22:07,367 basehttp 154 "OPTIONS /meiduo_admin/orders/2021011604291500000002/ HTTP/1.1" 200 0
+INFO 2021-01-17 05:22:07,503 basehttp 154 "GET /meiduo_admin/orders/2021011604291500000002/ HTTP/1.1" 200 703
+INFO 2021-01-17 05:22:09,080 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
+INFO 2021-01-17 05:23:01,410 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-17 05:23:07,979 basehttp 154 "GET /meiduo_admin/orders/2021011604291500000002/ HTTP/1.1" 200 703
+INFO 2021-01-17 05:23:13,400 basehttp 154 "OPTIONS /meiduo_admin/orders/2021011604291500000002/status/ HTTP/1.1" 200 0
+INFO 2021-01-17 05:23:13,695 basehttp 154 "PATCH /meiduo_admin/orders/2021011604291500000002/status/ HTTP/1.1" 200 64
+INFO 2021-01-17 05:23:13,900 basehttp 154 "GET /meiduo_admin/orders/2021011604291500000002/ HTTP/1.1" 200 703
+INFO 2021-01-17 05:23:18,269 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 250
+INFO 2021-01-17 05:23:20,264 basehttp 154 "GET /meiduo_admin/orders/2021011604291500000002/ HTTP/1.1" 200 703
