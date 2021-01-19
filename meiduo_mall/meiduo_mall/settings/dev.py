@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
-        'HOST': '192.168.209.129',  # 数据库主机
+        'HOST': '192.168.209.130',  # 数据库主机
         'PORT': 3306,  # 数据库端口
         'USER': 'yc',  # 数据库用户名
         'PASSWORD': '12345',  # 数据库用户密码
@@ -142,7 +142,7 @@ CACHES = {
     # 默认存储信息: 存到 0 号库
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.129:6379/0",
+        "LOCATION": "redis://192.168.209.130:6379/0",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -150,7 +150,7 @@ CACHES = {
     # session 信息: 存到 1 号库
     "session": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.129:6379/1",
+        "LOCATION": "redis://192.168.209.130:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -158,21 +158,21 @@ CACHES = {
     # 验证码信息: 存到 2 号库
     "verify_code": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.129:6379/2",
+        "LOCATION": "redis://192.168.209.130:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
     "history": {  # 用户浏览记录 3 号库
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.129:6379/3",
+        "LOCATION": "redis://192.168.209.130:6379/3",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
     "carts": {  # 购物车存储 存到 5 号库
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.209.129:6379/5",
+        "LOCATION": "redis://192.168.209.130:6379/5",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -234,6 +234,10 @@ AUTH_USER_MODEL = 'users.User'
 CORS_ORIGIN_WHITELIST = [
     'http://www.meiduo.site:8080',  # 商城页面前端
     'http://www.meiduo.site:8081',  # 后台管理站点前端
+    'http://www.meiduo.site:8000',
+    '192.168.209.130:8000',
+    '192.168.209.130:8080',
+    '192.168.209.130:8081',
 ]
 # 允许携带cookie
 CORS_ALLOW_CREDENTIALS = True
@@ -273,7 +277,7 @@ FDFS_BASE_URL = 'http://image.meiduo.site:8888/'
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
-        'URL': 'http://192.168.209.129:9200/',  # Elasticsearch服务器ip地址，端口号固定为9200
+        'URL': 'http://192.168.209.130:9200/',  # Elasticsearch服务器ip地址，端口号固定为9200
         'INDEX_NAME': 'meiduo_mall',  # Elasticsearch建立的索引库的名称
     },
 }
